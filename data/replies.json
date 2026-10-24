@@ -461,7 +461,7 @@
   {
     "id": "S_WELCOME",
     "ta": "வணக்கம்! நான் <b>{BOT_NAME_TA}</b> ({BOT_NAME_EN}).\n\nசந்தேகமான SMS, லிங்க், படம் அல்லது குரல் செய்தியை எனக்கு அனுப்புங்கள். இது மோசடியா என்று தமிழில் சொல்கிறேன்.\n\n<i>அறிவற்றங் காக்கும் கருவி செறுவார்க்கும்\nஉள்ளழிக்கல் ஆகா அரண்</i> — குறள் 421\n\nOTP, PIN யாரிடமும் சொல்லாதீர்கள்.",
-    "en": "Hello! I am <b>{BOT_NAME_TA}</b> ({BOT_NAME_EN}).\n\nForward or send any suspicious SMS, link, image, or voice note. I will analyze whether it is a scam.\n\n<i>Knowledge is a weapon that wards off destruction; an inner fortress which enemies cannot destroy.</i> — Kural 421\n\nNever share your OTP or PIN with anyone.",
+    "en": "Hello! I am <b>{BOT_NAME_EN}</b>.\n\nForward or send any suspicious SMS, link, image, or voice note. I will analyze whether it is a scam.\n\n<i>Knowledge is a weapon that wards off destruction; an inner fortress which enemies cannot destroy.</i> - Kural 421\n\nNever share your OTP or PIN with anyone.",
     "tts_ta": "வணக்கம்! நான் அறிவுஅரண். சந்தேகமான செய்தி அல்லது லிங்கை எனக்கு அனுப்புங்கள். இது மோசடியா என்று சொல்கிறேன். ஓ டி பி, பின் யாரிடமும் சொல்லாதீர்கள்.",
     "tts_en": "Hello! I am Arivaran. Send me a suspicious message or link, and I will check if it looks like a scam. Never share your O T P or P I N.",
     "status_ta": "needs_native_review",

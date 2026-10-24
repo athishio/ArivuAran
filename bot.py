@@ -604,18 +604,24 @@ async def handle_message(user_id: int, msg_type: str, content: Any, chat_id: Opt
             if text_str.startswith("/"):
                 cmd = text_str.split()[0].lower()
                 if cmd == "/start":
-                    welcome_entry = get_reply("S_WELCOME")
-                    w_text = welcome_entry[user_lang] if welcome_entry and user_lang in welcome_entry else welcome_entry["ta"]
-                    await telegram_io.send_text(effective_chat_id, format_template(w_text))
-                    logger.info(f"[{timestamp}] msg_type='command' cmd='/start' user_id={masked_user}: SUCCESS")
+                    bilingual_prompt = (
+                        "வணக்கம்! உங்கள் மொழியைத் தேர்ந்தெடுக்கவும்.\n"
+                        "Welcome! Please select your language."
+                    )
+                    buttons = [
+                        {"id": "SET_LANG_TA", "title": "தமிழ்"},
+                        {"id": "SET_LANG_EN", "title": "English"},
+                    ]
+                    await telegram_io.send_text(effective_chat_id, bilingual_prompt, buttons=buttons)
+                    logger.info(f"[{timestamp}] msg_type='command' cmd='/start' user_id={masked_user}: PROMPT_LANG")
                     return
                 elif cmd == "/help":
                     demo_line_ta = "\n/demo — மாதிரி சோதனைகள் (Demo test cases)" if config.DEMO_MODE else ""
                     demo_line_en = "\n/demo — Demo test cases" if config.DEMO_MODE else ""
                     if user_lang == "en":
                         help_text = (
-                            f"<b>{BOT_NAME_TA} ({BOT_NAME_EN}) — Commands:</b>\n\n"
-                            f"/start — Start {BOT_NAME_EN}\n"
+                            f"<b>{BOT_NAME_EN} — Commands:</b>\n\n"
+                            f"/start — Start {BOT_NAME_EN} & select language\n"
                             f"/help — List commands\n"
                             f"/language — Select language\n"
                             f"/privacy — Privacy policy\n"
@@ -625,8 +631,8 @@ async def handle_message(user_id: int, msg_type: str, content: Any, chat_id: Opt
                         )
                     else:
                         help_text = (
-                            f"<b>{BOT_NAME_TA} ({BOT_NAME_EN}) — கட்டளைகள் (Commands):</b>\n\n"
-                            f"/start — {BOT_NAME_TA} தொடக்கம் (Start bot)\n"
+                            f"<b>{BOT_NAME_TA} — கட்டளைகள் (Commands):</b>\n\n"
+                            f"/start — {BOT_NAME_TA} தொடங்கு (Start bot)\n"
                             f"/help — கட்டளைகளின் பட்டியல் (List commands)\n"
                             f"/language — மொழி தேர்வு (Select language)\n"
                             f"/privacy — தனியுரிமை கொள்கை (Privacy policy)\n"
@@ -702,32 +708,70 @@ async def handle_message(user_id: int, msg_type: str, content: Any, chat_id: Opt
                     susp_c = v_counts.get("SUSPICIOUS", 0)
                     safe_c = v_counts.get("NO_RED_FLAGS", 0) or v_counts.get("LIKELY_SAFE", 0)
                     total_c = scam_c + susp_c + safe_c
-                    msg = (
-                        f"📊 <b>{BOT_NAME_TA} நேரலை புள்ளிவிவரங்கள் ({BOT_NAME_EN} Live Stats)</b>\n"
-                        f"• மொத்த சோதனைகள்: {total_c}\n"
-                        f"• கண்டறியப்பட்ட மோசடிகள்: {scam_c}\n"
-                        f"• சந்தேகத்திற்குரியவை: {susp_c}\n"
-                        f"• எச்சரிக்கை அறிகுறி இல்லாதவை: {safe_c}"
-                    )
+                    if user_lang == "en":
+                        msg = (
+                            f"📊 <b>{BOT_NAME_EN} Live Statistics</b>\n\n"
+                            f"• Total checks: {total_c}\n"
+                            f"• Scams detected: {scam_c}\n"
+                            f"• Suspicious: {susp_c}\n"
+                            f"• No red flags: {safe_c}"
+                        )
+                    else:
+                        msg = (
+                            f"📊 <b>{BOT_NAME_TA} நேரலை புள்ளிவிவரங்கள் ({BOT_NAME_EN} Live Stats)</b>\n\n"
+                            f"• மொத்த சோதனைகள்: {total_c}\n"
+                            f"• கண்டறியப்பட்ட மோசடிகள்: {scam_c}\n"
+                            f"• சந்தேகத்திற்குரியவை: {susp_c}\n"
+                            f"• எச்சரிக்கை அறிகுறி இல்லாதவை: {safe_c}"
+                        )
                     await telegram_io.send_text(effective_chat_id, msg)
                     return
 
             # Greetings Handling
             greetings = {"/start", "hi", "hello", "vanakkam", "வணக்கம்", "start"}
             if text_str.lower() in greetings:
+                if text_str.lower() in ("/start", "start"):
+                    bilingual_prompt = (
+                        "வணக்கம்! உங்கள் மொழியைத் தேர்ந்தெடுக்கவும்.\n"
+                        "Welcome! Please select your language."
+                    )
+                    buttons = [
+                        {"id": "SET_LANG_TA", "title": "தமிழ்"},
+                        {"id": "SET_LANG_EN", "title": "English"},
+                    ]
+                    await telegram_io.send_text(effective_chat_id, bilingual_prompt, buttons=buttons)
+                    return
                 welcome_entry = get_reply("S_WELCOME")
-                await telegram_io.send_text(effective_chat_id, format_template(welcome_entry["ta"]))
+                w_txt = welcome_entry[user_lang] if welcome_entry and user_lang in welcome_entry else welcome_entry.get("ta")
+                await telegram_io.send_text(effective_chat_id, format_template(w_txt))
                 logger.info(f"[{timestamp}] msg_type='command' cmd='greeting' user_id={masked_user}: SUCCESS")
                 return
 
             if text_str.lower() == "help":
-                help_text = (
-                    f"<b>{BOT_NAME_TA} ({BOT_NAME_EN}) — கட்டளைகள் (Commands):</b>\n\n"
-                    f"/start — {BOT_NAME_TA} தொடக்கம் (Start bot)\n"
-                    f"/help — கட்டளைகளின் பட்டியல் (List commands)\n"
-                    f"/privacy — தனியுரிமை கொள்கை (Privacy policy)\n"
-                    f"/delete — தற்காலிக நினைவகத்தை அழி (Clear session memory)"
-                )
+                demo_line_ta = "\n/demo — மாதிரி சோதனைகள் (Demo test cases)" if config.DEMO_MODE else ""
+                demo_line_en = "\n/demo — Demo test cases" if config.DEMO_MODE else ""
+                if user_lang == "en":
+                    help_text = (
+                        f"<b>{BOT_NAME_EN} — Commands:</b>\n\n"
+                        f"/start — Start {BOT_NAME_EN} & select language\n"
+                        f"/help — List commands\n"
+                        f"/language — Select language\n"
+                        f"/privacy — Privacy policy\n"
+                        f"/stats — Live detection statistics\n"
+                        f"/delete — Clear session & preferences"
+                        f"{demo_line_en}"
+                    )
+                else:
+                    help_text = (
+                        f"<b>{BOT_NAME_TA} — கட்டளைகள் (Commands):</b>\n\n"
+                        f"/start — {BOT_NAME_TA} தொடங்கு (Start bot)\n"
+                        f"/help — கட்டளைகளின் பட்டியல் (List commands)\n"
+                        f"/language — மொழி தேர்வு (Select language)\n"
+                        f"/privacy — தனியுரிமை கொள்கை (Privacy policy)\n"
+                        f"/stats — நேரலை புள்ளிவிவரங்கள் (Live stats)\n"
+                        f"/delete — தற்காலிக நினைவகத்தை அழி (Clear session memory)"
+                        f"{demo_line_ta}"
+                    )
                 await telegram_io.send_text(effective_chat_id, help_text)
                 logger.info(f"[{timestamp}] msg_type='command' cmd='help' user_id={masked_user}: SUCCESS")
                 return
