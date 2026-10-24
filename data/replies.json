@@ -1,0 +1,569 @@
+[
+  {
+    "id": "V_SCAM",
+    "ta": "⚠️ <b>இது மோசடி போல் உள்ளது.</b>\n\nகாரணங்கள்:\n1. {reason1}\n2. {reason2}\n\nசெய்ய வேண்டியவை:\n• லிங்கைத் தொடாதீர்கள்.\n• OTP, PIN யாரிடமும் சொல்லாதீர்கள்.\n• சந்தேகம் இருந்தால் உங்கள் வங்கியின் அதிகாரப்பூர்வ எண்ணை அழையுங்கள்.\nமேலும் கேட்க: \"ஏன்?\" / \"என்ன செய்வது?\"",
+    "en": "⚠️ <b>This looks like a scam.</b>\n\nReasons:\n1. {reason1}\n2. {reason2}\n\nWhat to do:\n• Do not click or open the link.\n• Never share your OTP or PIN with anyone.\n• If in doubt, call your bank's official helpline.",
+    "tts_ta": "இது மோசடி போல் உள்ளது. காரணங்கள்: 1. {reason1} 2. {reason2} செய்ய வேண்டியவை: லிங்கைத் தொடாதீர்கள். ஓ டி பி, பின் யாரிடமும் சொல்லாதீர்கள். சந்தேகம் இருந்தால் உங்கள் வங்கியின் அதிகாரப்பூர்வ எண்ணை அழையுங்கள். மேலும் கேட்க: \"ஏன்?\" / \"என்ன செய்வது?\"",
+    "tts_en": "This looks like a scam. Do not click any link, and never share your O T P or P I N.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "V_SUSPICIOUS",
+    "ta": "🟡 <b>இது சந்தேகத்துக்குரியது.</b>\nஇது மோசடியா என்று என்னால் உறுதியாகச் சொல்ல முடியவில்லை.\n\nகாரணங்கள்:\n1. {reason1}\n2. {reason2}\n\nலிங்கைத் திறக்க வேண்டாம். உங்கள் வங்கியின் செயலியில் அல்லது அதிகாரப்பூர்வ இணையதளத்தில் நீங்களே பாருங்கள். OTP, PIN யாரிடமும் சொல்லாதீர்கள்.",
+    "en": "🟡 <b>This looks suspicious.</b>\nI cannot determine with certainty whether this is genuine.\n\nReasons:\n1. {reason1}\n2. {reason2}\n\nWhat to do:\n• Do not open any links.\n• Verify directly in your bank's official app or site.\n• Never share your OTP or PIN with anyone.",
+    "tts_ta": "இது சந்தேகத்துக்குரியது. இது மோசடியா என்று என்னால் உறுதியாகச் சொல்ல முடியவில்லை. காரணங்கள்: 1. {reason1} 2. {reason2} லிங்கைத் திறக்க வேண்டாம். உங்கள் வங்கியின் செயலியில் அல்லது அதிகாரப்பூர்வ இணையதளத்தில் நீங்களே பாருங்கள். ஓ டி பி, பின் யாரிடமும் சொல்லாதீர்கள்.",
+    "tts_en": "This looks suspicious. Do not click the link, and never share your O T P or P I N.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "V_NOFLAG",
+    "ta": "ℹ️ <b>இதில் எச்சரிக்கை அறிகுறிகள் எதுவும் கிடைக்கவில்லை.</b>\n\nஆனால் இது பாதுகாப்பானது என்று அர்த்தம் இல்லை. தெரியாத எண்ணிலிருந்து வந்தால் கவனமாக இருங்கள். OTP, PIN யாரிடமும் சொல்லாதீர்கள்.",
+    "en": "ℹ️ <b>No red flags found in this message.</b>\n\nWhat to do:\n• This does not guarantee the message is genuine.\n• Stay alert if it was sent by an unknown number.\n• Never share your OTP or PIN with anyone.",
+    "tts_ta": "இதில் எச்சரிக்கை அறிகுறிகள் எதுவும் கிடைக்கவில்லை. ஆனால் இது பாதுகாப்பானது என்று அர்த்தம் இல்லை. தெரியாத எண்ணிலிருந்து வந்தால் கவனமாக இருங்கள். ஓ டி பி, பின் யாரிடமும் சொல்லாதீர்கள்.",
+    "tts_en": "No red flags were found in this message. Stay cautious if from an unknown number, and never share your O T P or P I N.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "V_UNREADABLE",
+    "ta": "உங்கள் செய்தியைப் படிக்க முடியவில்லை. தயவுசெய்து மீண்டும் அனுப்புங்கள் அல்லது செய்தியை எழுத்தில் ஒட்டுங்கள்.",
+    "en": "I could not read your message. Please send again or paste the text directly.",
+    "tts_ta": "உங்கள் செய்தியைப் படிக்க முடியவில்லை. தயவுசெய்து மீண்டும் அனுப்புங்கள் அல்லது செய்தியை எழுத்தில் ஒட்டுங்கள்.",
+    "tts_en": "I could not read your message. Please send again or paste the text directly.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "R_URGENT",
+    "ta": "\"உடனே\", \"இன்றே\" என்று அவசரப்படுத்துகிறது.",
+    "en": "It rushes you (\"immediately\", \"today\").",
+    "tts_ta": "\"உடனே\", \"இன்றே\" என்று அவசரப்படுத்துகிறது.",
+    "tts_en": "It rushes you (\"immediately\", \"today\").",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "R_OTP",
+    "ta": "OTP / PIN கேட்கிறது.",
+    "en": "It asks for OTP/PIN.",
+    "tts_ta": "ஓ டி பி / பின் கேட்கிறது.",
+    "tts_en": "It asks for OTP/PIN.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "R_LINK_SHORT",
+    "ta": "சுருக்கப்பட்ட லிங்க் உள்ளது. உண்மையான இணையதளம் மறைந்துள்ளது.",
+    "en": "Shortened link hides the real site.",
+    "tts_ta": "சுருக்கப்பட்ட லிங்க் உள்ளது. உண்மையான இணையதளம் மறைந்துள்ளது.",
+    "tts_en": "Shortened link hides the real site.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "R_LINK_LOOK",
+    "ta": "லிங்க் வங்கியின் பெயரைப் போல் தோன்றுகிறது, ஆனால் உண்மையான முகவரி வேறு.",
+    "en": "Link imitates a bank name but the real address differs.",
+    "tts_ta": "லிங்க் வங்கியின் பெயரைப் போல் தோன்றுகிறது, ஆனால் உண்மையான முகவரி வேறு.",
+    "tts_en": "Link imitates a bank name but the real address differs.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "R_KNOWN_BAD",
+    "ta": "இந்த லிங்க் மோசடி பட்டியலில் உள்ளது.",
+    "en": "The link is on a known-bad list.",
+    "tts_ta": "இந்த லிங்க் மோசடி பட்டியலில் உள்ளது.",
+    "tts_en": "The link is on a known-bad list.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "R_KYC",
+    "ta": "KYC புதுப்பிக்காவிட்டால் கணக்கு முடங்கும் என்று பயமுறுத்துகிறது.",
+    "en": "Threatens account block unless KYC is updated.",
+    "tts_ta": "கே ஒய் சி புதுப்பிக்காவிட்டால் கணக்கு முடங்கும் என்று பயமுறுத்துகிறது.",
+    "tts_en": "Threatens account block unless KYC is updated.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "R_PRIZE",
+    "ta": "பரிசு / லாட்டரி வென்றதாகச் சொல்கிறது.",
+    "en": "Claims you won a prize/lottery.",
+    "tts_ta": "பரிசு / லாட்டரி வென்றதாகச் சொல்கிறது.",
+    "tts_en": "Claims you won a prize/lottery.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "R_FEE_FIRST",
+    "ta": "முதலில் பணம் அல்லது கட்டணம் கட்டச் சொல்கிறது.",
+    "en": "Asks you to pay upfront fees.",
+    "tts_ta": "முதலில் பணம் அல்லது கட்டணம் கட்டச் சொல்கிறது.",
+    "tts_en": "Asks you to pay upfront fees.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "R_AUTHORITY",
+    "ta": "போலீஸ் / அதிகாரி என்று சொல்லி பயமுறுத்துகிறது.",
+    "en": "Pretends to be police/officer and threatens.",
+    "tts_ta": "போலீஸ் / அதிகாரி என்று சொல்லி பயமுறுத்துகிறது.",
+    "tts_en": "Pretends to be police/officer and threatens.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "R_APP",
+    "ta": "ஒரு செயலியை நிறுவச் சொல்கிறது.",
+    "en": "Asks you to install an app.",
+    "tts_ta": "ஒரு செயலியை நிறுவச் சொல்கிறது.",
+    "tts_en": "Asks you to install an app.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "R_JOB",
+    "ta": "வேலைக்காக முன்பணம் கேட்கிறது அல்லது எளிய வேலைக்கு அதிக பணம் தருவதாகச் சொல்கிறது.",
+    "en": "Asks money for a job or promises high pay for easy tasks.",
+    "tts_ta": "வேலைக்காக முன்பணம் கேட்கிறது அல்லது எளிய வேலைக்கு அதிக பணம் தருவதாகச் சொல்கிறது.",
+    "tts_en": "Asks money for a job or promises high pay for easy tasks.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "R_INVEST",
+    "ta": "உறுதியான அதிக லாபம் தருவதாகச் சொல்கிறது.",
+    "en": "Promises guaranteed high returns.",
+    "tts_ta": "உறுதியான அதிக லாபம் தருவதாகச் சொல்கிறது.",
+    "tts_en": "Promises guaranteed high returns.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "R_UPI_COLLECT",
+    "ta": "பணம் \"பெற\" PIN போடச் சொல்கிறது.",
+    "en": "Asks for PIN to \"receive\" money.",
+    "tts_ta": "பணம் \"பெற\" பின் போடச் சொல்கிறது.",
+    "tts_en": "Asks for PIN to \"receive\" money.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "R_PHONE",
+    "ta": "செய்தியில் உள்ள எண்ணை அழைக்கச் சொல்கிறது.",
+    "en": "Tells you to call a number in the message.",
+    "tts_ta": "செய்தியில் உள்ள எண்ணை அழைக்கச் சொல்கிறது.",
+    "tts_en": "Tells you to call a number in the message.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "F_CLICK_SCAM",
+    "ta": "வேண்டாம். லிங்கைத் திறக்காதீர்கள்.",
+    "en": "No, don't open it.",
+    "tts_ta": "வேண்டாம். லிங்கைத் திறக்காதீர்கள்.",
+    "tts_en": "No, don't open it.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "F_CLICK_NOFLAG",
+    "ta": "எச்சரிக்கை அறிகுறி இல்லை, ஆனால் உறுதி இல்லை. தெரியாத லிங்கில் OTP, PIN கொடுக்காதீர்கள்.",
+    "en": "No red flags, but not certain. Never give OTP/PIN on unknown links.",
+    "tts_ta": "எச்சரிக்கை அறிகுறி இல்லை, ஆனால் உறுதி இல்லை. தெரியாத லிங்கில் ஓ டி பி, பின் கொடுக்காதீர்கள்.",
+    "tts_en": "No red flags, but not certain. Never give OTP/PIN on unknown links.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "F_NAME",
+    "ta": "இது \"{scam_type_ta}\" வகை மோசடி. தெரிந்துகொள்ள \"கற்றுக்கொள்\" என்று சொல்லுங்கள்.",
+    "en": "This is a \"{type}\" scam. Say \"learn\" to know more.",
+    "tts_ta": "நான் அறிவுஅரண். சந்தேகமான செய்திகளை சரிபார்க்க உதவும் தளம்.",
+    "tts_en": "I am Arivaran, an automated helper to detect digital and financial scams.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "F_WHY",
+    "ta": "காரணங்கள் மீண்டும்:\n{reason_list}",
+    "en": "Reasons again.",
+    "tts_ta": "கண்டறியப்பட்ட காரணங்கள் மீண்டும் தெரிவிக்கப்படுகின்றன.",
+    "tts_en": "Repeating the detection reasons for this message.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "F_TODO",
+    "ta": "லிங்கைத் தொடாதீர்கள். பதில் அனுப்ப வேண்டாம். OTP, PIN சொல்லாதீர்கள். சந்தேகம் இருந்தால் வங்கியின் அதிகாரப்பூர்வ எண்ணை அழையுங்கள்.",
+    "en": "Don't touch the link, don't reply, don't share OTP/PIN, call your bank's official number.",
+    "tts_ta": "லிங்கைத் தொடாதீர்கள். பதில் அனுப்ப வேண்டாம். ஓ டி பி, பின் சொல்லாதீர்கள். சந்தேகம் இருந்தால் வங்கியின் அதிகாரப்பூர்வ எண்ணை அழையுங்கள்.",
+    "tts_en": "Don't touch the link, don't reply, don't share OTP/PIN, call your bank's official number.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "F_REPLY",
+    "ta": "வேண்டாம். பதில் அனுப்பினால் உங்கள் எண் செயலில் உள்ளது என்று அவர்களுக்குத் தெரியும். எண்ணை block செய்யலாம்.",
+    "en": "No. Replying tells them your number is active. You may block the number.",
+    "tts_ta": "வேண்டாம். பதில் அனுப்பினால் உங்கள் எண் செயலில் உள்ளது என்று அவர்களுக்குத் தெரியும். எண்ணை block செய்யலாம்.",
+    "tts_en": "No. Replying tells them your number is active. You may block the number.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "F_CALLNUM",
+    "ta": "வேண்டாம். செய்தியில் உள்ள எண்ணை அழைக்காதீர்கள். உங்கள் வங்கி அட்டையில் அல்லது அதிகாரப்பூர்வ இணையதளத்தில் உள்ள எண்ணை மட்டும் அழையுங்கள்.",
+    "en": "Don't call the number in the message; use the number on your card or official site.",
+    "tts_ta": "வேண்டாம். செய்தியில் உள்ள எண்ணை அழைக்காதீர்கள். உங்கள் வங்கி அட்டையில் அல்லது அதிகாரப்பூர்வ இணையதளத்தில் உள்ள எண்ணை மட்டும் அழையுங்கள்.",
+    "tts_en": "Don't call the number in the message; use the number on your card or official site.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "F_FROMBANK",
+    "ta": "அனுப்பியவர் யார் என்று என்னால் உறுதிப்படுத்த முடியாது. உங்கள் வங்கியின் செயலியில் நீங்களே சரிபாருங்கள்.",
+    "en": "I can't confirm who sent it. Check in your bank's app yourself.",
+    "tts_ta": "அனுப்பியவர் யார் என்று என்னால் உறுதிப்படுத்த முடியாது. உங்கள் வங்கியின் செயலியில் நீங்களே சரிபாருங்கள்.",
+    "tts_en": "I can't confirm who sent it. Check in your bank's app yourself.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "F_SAFE",
+    "ta": "\"பாதுகாப்பானது\" என்று நான் சொல்ல மாட்டேன். {verdict_sentence} OTP, PIN யாரிடமும் சொல்லாதீர்கள்.",
+    "en": "I won't say \"safe\". {verdict}. Never share OTP/PIN.",
+    "tts_ta": "அறிவுஅரண் இதை பாதுகாப்பானது என்று கூறாது. சந்தேகமிருந்தால் கவனமாக இருங்கள்.",
+    "tts_en": "Arivaran will not declare any message safe. Stay cautious if from an unknown sender.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "F_REPORT",
+    "ta": "பணம் போயிருந்தால் உடனே 1930-ஐ அழையுங்கள். இணையத்தில் cybercrime.gov.in-ல் புகார் செய்யலாம். புகாரை நான் பதிவு செய்ய மாட்டேன்; நீங்களே செய்ய வேண்டும். செய்திகளை அழிக்காமல் வைத்திருங்கள்.",
+    "en": "If money is lost call 1930; report on cybercrime.gov.in. I don't file complaints; keep the messages.",
+    "tts_ta": "பணம் போயிருந்தால் உடனே ஒன்று ஒன்பது மூன்று பூஜ்யம்-ஐ அழையுங்கள். இணையத்தில் சைபர் கிரைம் டாட் ஜிஓவி டாட் இன்-ல் புகார் செய்யலாம். புகாரை நான் பதிவு செய்ய மாட்டேன்; நீங்களே செய்ய வேண்டும். செய்திகளை அழிக்காமல் வைத்திருங்கள்.",
+    "tts_en": "If money is lost call 1930; report on cybercrime.gov.in. I don't file complaints; keep the messages.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "F_SHARE",
+    "ta": "உங்கள் குடும்பத்துக்கு எச்சரிக்கை அட்டை தயார் செய்கிறேன். அனுப்புவதா வேண்டாமா என்பது உங்கள் விருப்பம்.",
+    "en": "I'll make a warning card. Whether to forward is your choice.",
+    "tts_ta": "உங்கள் குடும்பத்துக்கு எச்சரிக்கை அட்டை தயார் செய்கிறேன். அனுப்புவதா வேண்டாமா என்பது உங்கள் விருப்பம்.",
+    "tts_en": "I'll make a warning card. Whether to forward is your choice.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "F_LEARN",
+    "ta": "{lesson_text}",
+    "en": "(plays the teach-mode lesson for the scam type, section 5)",
+    "tts_ta": "கற்றுக்கொள்ள வேண்டிய தலைப்பைத் தேர்ந்தெடுக்கவும்.",
+    "tts_en": "Select a topic to learn about common scams.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "F_REPEAT",
+    "ta": "{last_reply}",
+    "en": "(replays the last reply; offers a slower voice)",
+    "tts_ta": "முந்தைய பதில் மீண்டும் தெரிவிக்கப்படுகிறது.",
+    "tts_en": "Repeating the previous response.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "F_WRONG",
+    "ta": "மன்னிக்கவும். நான் தவறு செய்திருக்கலாம். உங்கள் செய்தியை அனுப்பாமல், இந்த முடிவு தவறு என்று மட்டும் பதிவு செய்கிறேன். பதிவு செய்யலாமா? [ஆம்] [வேண்டாம்]",
+    "en": "Apologies, I may make mistakes. I will record that this verdict was marked incorrect, without storing your message text. Proceed?",
+    "tts_ta": "மன்னிக்கவும். நான் தவறு செய்திருக்கலாம். உங்கள் செய்தியை அனுப்பாமல், இந்த முடிவு தவறு என்று மட்டும் பதிவு செய்கிறேன். பதிவு செய்யலாமா? [ஆம்] [வேண்டாம்]",
+    "tts_en": "Apologies, I may make mistakes. I will record that this verdict was marked incorrect, without storing your message text.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "F_PRIVACY",
+    "ta": "உங்கள் செய்தி, எண், OTP எதையும் நான் சேமிப்பதில்லை. மோசடி வகை, நேரம் போன்ற பெயர் இல்லாத எண்ணிக்கை மட்டும் சேமிக்கப்படும்.",
+    "en": "I do not store your message text, phone number, or OTP. Anonymous counts (scam category, time) are kept.",
+    "tts_ta": "உங்கள் செய்தி, எண், ஓ டி பி எதையும் நான் சேமிப்பதில்லை. மோசடி வகை, நேரம் போன்ற பெயர் இல்லாத எண்ணிக்கை மட்டும் சேமிக்கப்படும்.",
+    "tts_en": "I do not store your message text, phone number, or O T P. Anonymous counts are kept.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "F_UNKNOWN",
+    "ta": "மன்னிக்கவும், புரியவில்லை. கீழே உள்ள பொத்தான்களில் ஒன்றைத் தேர்ந்தெடுங்கள்.",
+    "en": "Sorry, didn't understand. Pick a button.",
+    "tts_ta": "மன்னிக்கவும், புரியவில்லை. கீழே உள்ள பொத்தான்களில் ஒன்றைத் தேர்ந்தெடுங்கள்.",
+    "tts_en": "Sorry, didn't understand. Pick a button.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "F_NEED_VERDICT",
+    "ta": "முதலில் நீங்கள் சரிபார்க்க விரும்பும் செய்தியை எனக்கு அனுப்புங்கள்.",
+    "en": "Please send the message you want to verify before asking.",
+    "tts_ta": "முதலில் நீங்கள் சரிபார்க்க விரும்பும் செய்தியை எனக்கு அனுப்புங்கள்.",
+    "tts_en": "Please send the message you want to verify before asking.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "INC_OTP",
+    "ta": "பதற வேண்டாம். இப்போது இதைச் செய்யுங்கள்:\n1. உங்கள் வங்கியின் அதிகாரப்பூர்வ உதவி எண்ணை உடனே அழைத்து, நடந்ததைச் சொல்லுங்கள். அட்டை / UPI-ஐ நிறுத்த முடியுமா என்று கேளுங்கள்.\n2. பணம் போயிருந்தால் உடனே 1930-ஐ அழையுங்கள்.\n3. செய்திகளையும் திரைப்பிடிப்புகளையும் அழிக்காதீர்கள்.",
+    "en": "Don't panic. 1) Call your bank's official helpline, ask if card/UPI can be stopped. 2) If money is gone, call 1930. 3) Keep messages and screenshots.",
+    "tts_ta": "பதற வேண்டாம். உடனே உங்கள் வங்கியின் அதிகாரப்பூர்வ எண்ணை அழைத்து, அட்டை மற்றும் UPI-ஐ நிறுத்தச் சொல்லுங்கள். பணம் போயிருந்தால் 1930-ஐ அழையுங்கள்.",
+    "tts_en": "Do not panic. Call your bank official helpline immediately and ask to block your card or UPI. If money was lost, call 1930.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "INC_LINK",
+    "ta": "இதுவரை பணம் போகவில்லை என்றால் பதற வேண்டாம்.\n1. அந்தப் பக்கத்தில் எதுவும் உள்ளிடாதீர்கள். மூடிவிடுங்கள்.\n2. OTP, PIN, கடவுச்சொல் உள்ளிட்டிருந்தால் வங்கியின் அதிகாரப்பூர்வ எண்ணை அழையுங்கள்.\n3. பணம் போயிருந்தால் 1930.",
+    "en": "If no money lost, don't panic. 1) Close the page, enter nothing. 2) If you typed OTP/PIN/password, call your bank. 3) If money is gone, 1930.",
+    "tts_ta": "பதற வேண்டாம். அந்தப் பக்கத்தை உடனே மூடிவிடுங்கள். கடவுச்சொல் உள்ளிட்டிருந்தால் வங்கிக்குத் தெரிவியுங்கள். பணம் போயிருந்தால் 1930.",
+    "tts_en": "Do not panic. Close that page immediately. If credentials were entered, contact your bank. If money was lost, call 1930.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "INC_ANYDESK",
+    "ta": "இது ஆபத்தானது. உடனே செய்யுங்கள்:\n1. இணையத்தை அணையுங்கள் (Wi-Fi, மொபைல் டேட்டா).\n2. அந்தச் செயலியை மூடி, நீக்குங்கள்.\n3. வங்கி செயலிகளைத் திறக்காதீர்கள்.\n4. முடிந்தால் வேறு போனிலிருந்து வங்கியின் அதிகாரப்பூர்வ எண்ணையும் 1930-ஐயும் அழையுங்கள்.",
+    "en": "Dangerous. 1) Turn off internet. 2) Close and delete the app. 3) Don't open banking apps. 4) If possible, from another phone call your bank and 1930.",
+    "tts_ta": "பதற வேண்டாம். உடனடியாக இணைய தொடர்பை அணைத்துவிட்டு, அந்த செயலியை நீக்கிவிடுங்கள். வங்கிக்குத் தெரிவியுங்கள். பணம் போயிருந்தால் 1930.",
+    "tts_en": "Do not panic. Turn off internet immediately and uninstall the remote application. Contact your bank and report to 1930.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "INC_PAID",
+    "ta": "நேரம் மிக முக்கியம். உடனே:\n1. 1930-ஐ அழையுங்கள்.\n2. உங்கள் வங்கியின் அதிகாரப்பூர்வ உதவி எண்ணிலும் தெரிவியுங்கள்.\n3. பிறகு cybercrime.gov.in-ல் புகார் செய்யலாம்.\n4. பணப் பரிமாற்ற விவரம், செய்திகள், திரைப்பிடிப்புகளை அழிக்காமல் வைத்திருங்கள்.\nபணம் திரும்பக் கிடைக்கும் என்று என்னால் உறுதி சொல்ல முடியாது.",
+    "en": "Time matters. 1) Call 1930. 2) Tell your bank's official helpline. 3) Then report at cybercrime.gov.in. 4) Keep records. I can't promise a refund.",
+    "tts_ta": "பதற வேண்டாம். உடனே 1930 எண்ணை அழைத்து புகார் அளியுங்கள். பரிவர்த்தனை எண் மற்றும் ஆதாரங்களை சேமித்து வையுங்கள்.",
+    "tts_en": "Do not panic. Call 1930 immediately to report the transaction. Keep your transaction reference and screenshots.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "INC_CARD",
+    "ta": "உடனே உங்கள் வங்கியின் அதிகாரப்பூர்வ எண்ணை அழைத்து, அட்டையை நிறுத்தச் சொல்லுங்கள். பணம் போயிருந்தால் 1930-ஐ அழையுங்கள். செய்திகளை அழிக்காதீர்கள்.",
+    "en": "Call your bank now, ask to stop the card. If money is gone, call 1930. Keep messages.",
+    "tts_ta": "உடனே உங்கள் வங்கியின் அதிகாரப்பூர்வ எண்ணை அழைத்து, அட்டையை நிறுத்தச் சொல்லுங்கள். பணம் போயிருந்தால் ஒன்று ஒன்பது மூன்று பூஜ்யம்-ஐ அழையுங்கள். செய்திகளை அழிக்காதீர்கள்.",
+    "tts_en": "Call your bank now, ask to stop the card. If money is gone, call 1930. Keep messages.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "T_KYC",
+    "ta": "வங்கியிலிருந்து என்று சொல்லி, \"KYC புதுப்பிக்காவிட்டால் கணக்கு முடங்கும்\" என்று செய்தி வரும். அதில் ஒரு லிங்க் இருக்கும். அதைத் தொடாதீர்கள். லிங்க் மூலம் OTP, PIN கேட்டால் அது மோசடி. வங்கிக் கிளைக்குச் செல்லுங்கள் அல்லது வங்கி செயலியில் நீங்களே பாருங்கள்.",
+    "en": "\"Bank\" SMS says KYC pending, account will be blocked, with a link. Don't touch it. OTP/PIN via link = scam. Go to branch or check the app yourself.",
+    "tts_ta": "வங்கியிலிருந்து என்று சொல்லி, \"கே ஒய் சி புதுப்பிக்காவிட்டால் கணக்கு முடங்கும்\" என்று செய்தி வரும். அதில் ஒரு லிங்க் இருக்கும். அதைத் தொடாதீர்கள். லிங்க் மூலம் ஓ டி பி, பின் கேட்டால் அது மோசடி. வங்கிக் கிளைக்குச் செல்லுங்கள் அல்லது வங்கி செயலியில் நீங்களே பாருங்கள்.",
+    "tts_en": "\"Bank\" SMS says KYC pending, account will be blocked, with a link. Don't touch it. OTP/PIN via link = scam. Go to branch or check the app yourself.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "T_OTP",
+    "ta": "OTP என்பது உங்கள் பணத்தின் சாவி. வங்கி ஊழியர், கூரியர், யாராக இருந்தாலும் OTP கேட்டால் சொல்லாதீர்கள். \"தவறுதலாக அனுப்பிவிட்டேன்\" என்றும் கேட்பார்கள். சொன்னால் பணம் போகலாம்.",
+    "en": "OTP is the key to your money. Never tell anyone. They may say \"sent by mistake\".",
+    "tts_ta": "ஓ டி பி என்பது உங்கள் பணத்தின் சாவி. வங்கி ஊழியர், கூரியர், யாராக இருந்தாலும் ஓ டி பி கேட்டால் சொல்லாதீர்கள். \"தவறுதலாக அனுப்பிவிட்டேன்\" என்றும் கேட்பார்கள். சொன்னால் பணம் போகலாம்.",
+    "tts_en": "OTP is the key to your money. Never tell anyone. They may say \"sent by mistake\".",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "T_PRIZE",
+    "ta": "\"நீங்கள் பரிசு வென்றீர்கள்\" என்று செய்தி வரும். பரிசு பெற முதலில் கட்டணம் அல்லது வரி கட்டச் சொல்வார்கள். நீங்கள் எந்தப் போட்டியிலும் கலந்துகொள்ளவில்லை என்றால், அது மோசடி. பணம் அனுப்பாதீர்கள்.",
+    "en": "\"You won!\" Then they ask for a fee. If you entered nothing, it's a scam. Send no money.",
+    "tts_ta": "\"நீங்கள் பரிசு வென்றீர்கள்\" என்று செய்தி வரும். பரிசு பெற முதலில் கட்டணம் அல்லது வரி கட்டச் சொல்வார்கள். நீங்கள் எந்தப் போட்டியிலும் கலந்துகொள்ளவில்லை என்றால், அது மோசடி. பணம் அனுப்பாதீர்கள்.",
+    "tts_en": "\"You won!\" Then they ask for a fee. If you entered nothing, it's a scam. Send no money.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "T_AUTH",
+    "ta": "போலீஸ் அல்லது அதிகாரி என்று போனில் அழைத்து, \"உங்கள் மேல் வழக்கு\" என்று பயமுறுத்தி, பணம் கேட்பார்கள். வீடியோ காலில் இருக்கச் சொல்வார்கள். பதற வேண்டாம். போனை வைத்துவிடுங்கள். குடும்பத்தாரிடம் சொல்லுங்கள். 1930-ஐ அழையுங்கள்.",
+    "en": "Callers pose as police, threaten, demand money, keep you on video call. Hang up, tell family, call 1930.",
+    "tts_ta": "போலீஸ் அல்லது அதிகாரி என்று போனில் அழைத்து, \"உங்கள் மேல் வழக்கு\" என்று பயமுறுத்தி, பணம் கேட்பார்கள். வீடியோ காலில் இருக்கச் சொல்வார்கள். பதற வேண்டாம். போனை வைத்துவிடுங்கள். குடும்பத்தாரிடம் சொல்லுங்கள். ஒன்று ஒன்பது மூன்று பூஜ்யம்-ஐ அழையுங்கள்.",
+    "tts_en": "Callers pose as police, threaten, demand money, keep you on video call. Hang up, tell family, call 1930.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "T_JOB",
+    "ta": "\"வீட்டிலிருந்தே வேலை, வீடியோ லைக் செய்தால் பணம்\" என்று செய்தி வரும். முதலில் சிறிய தொகை தருவார்கள். பிறகு \"அதிக லாபத்துக்கு பணம் கட்டுங்கள்\" என்பார்கள். வேலைக்காக முன்பணம் கேட்டால் நம்ப வேண்டாம்.",
+    "en": "Work from home, like videos, earn income scams. Small initial payout, then asking you to deposit funds. Never pay upfront fees for employment.",
+    "tts_ta": "\"வீட்டிலிருந்தே வேலை, வீடியோ லைக் செய்தால் பணம்\" என்று செய்தி வரும். முதலில் சிறிய தொகை தருவார்கள். பிறகு \"அதிக லாபத்துக்கு பணம் கட்டுங்கள்\" என்பார்கள். வேலைக்காக முன்பணம் கேட்டால் நம்ப வேண்டாம்.",
+    "tts_en": "Work from home video liking tasks. Small initial payout, then asking for deposits. Never pay upfront fees for employment.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "T_INVEST",
+    "ta": "\"இந்தப் பங்கில் போடுங்கள், இரட்டிப்பு லாபம்\" என்று குழுக்களில் சொல்வார்கள். உறுதியான லாபம் என்று யாரும் சொல்ல முடியாது. அவசரப்படுத்தினால் நிறுத்துங்கள். பணம் போடும் முன் குடும்பத்தாரிடம் கேளுங்கள்.",
+    "en": "Groups promise doubled profit. No one can guarantee profit. If rushed, stop and ask family.",
+    "tts_ta": "\"இந்தப் பங்கில் போடுங்கள், இரட்டிப்பு லாபம்\" என்று குழுக்களில் சொல்வார்கள். உறுதியான லாபம் என்று யாரும் சொல்ல முடியாது. அவசரப்படுத்தினால் நிறுத்துங்கள். பணம் போடும் முன் குடும்பத்தாரிடம் கேளுங்கள்.",
+    "tts_en": "Groups promise doubled profit. No one can guarantee profit. If rushed, stop and ask family.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "T_UPI",
+    "ta": "UPI-ல் \"பணம் பெற\" என்று ஒரு கோரிக்கை வரும். PIN போட்டால் உங்கள் பணம் போகும். பணம் பெறுவதற்கு PIN தேவையில்லை. PIN கேட்டால் நிறுத்துங்கள்.",
+    "en": "A \"request\" arrives. Entering PIN sends your money. Receiving money needs no PIN.",
+    "tts_ta": "யூ பி ஐ-ல் \"பணம் பெற\" என்று ஒரு கோரிக்கை வரும். பின் போட்டால் உங்கள் பணம் போகும். பணம் பெறுவதற்கு பின் தேவையில்லை. பின் கேட்டால் நிறுத்துங்கள்.",
+    "tts_en": "A \"request\" arrives. Entering PIN sends your money. Receiving money needs no PIN.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "T_CARE",
+    "ta": "இணையத்தில் தேடி கிடைத்த வாடிக்கையாளர் சேவை எண் போலியாக இருக்கலாம். அவர்கள் AnyDesk போன்ற செயலியை நிறுவச் சொல்வார்கள். நிறுவ வேண்டாம். அதிகாரப்பூர்வ இணையதளம் அல்லது அட்டையில் உள்ள எண்ணை மட்டும் பயன்படுத்துங்கள்.",
+    "en": "Customer-care numbers found online may be fake. They ask you to install a remote app. Don't. Use the official site or card number.",
+    "tts_ta": "இணையத்தில் தேடி கிடைத்த வாடிக்கையாளர் சேவை எண் போலியாக இருக்கலாம். அவர்கள் எனிடெஸ்க் போன்ற செயலியை நிறுவச் சொல்வார்கள். நிறுவ வேண்டாம். அதிகாரப்பூர்வ இணையதளம் அல்லது அட்டையில் உள்ள எண்ணை மட்டும் பயன்படுத்துங்கள்.",
+    "tts_en": "Customer-care numbers found online may be fake. They ask you to install a remote app. Don't. Use the official site or card number.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "SHARE_CARD",
+    "ta": "⚠️ மோசடி எச்சரிக்கை!\nஇப்படி ஒரு செய்தி வந்தது: **{scam_type_ta}**\nலிங்கைத் தொடாதீர்கள். OTP, PIN யாரிடமும் சொல்லாதீர்கள்.\nபணம் போயிருந்தால் உடனே 1930.\n{BOT_NAME_TA} ({BOT_NAME_EN})",
+    "en": "Family share warning card for forwarding.",
+    "tts_ta": "இப்படி ஒரு செய்தி வந்தது. இது மோசடி. லிங்கைத் தொடாதீர்கள். ஓ டி பி, பின் யாரிடமும் சொல்லாதீர்கள்.",
+    "tts_en": "A suspicious message was received. This looks like a scam. Do not click links. Never share your O T P or P I N.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "SHARE_CARD_OFFER",
+    "ta": "இந்த எச்சரிக்கை அட்டையை உங்கள் குடும்பத்துக்கு அனுப்ப விரும்புகிறீர்களா? [அட்டையைப் பெறு] [வேண்டாம்]",
+    "en": "Want to send this warning card to family? [Get card] [No]",
+    "tts_ta": "இந்த எச்சரிக்கை அட்டையை உங்கள் குடும்பத்துக்கு அனுப்ப விரும்புகிறீர்களா? [அட்டையைப் பெறு] [வேண்டாம்]",
+    "tts_en": "Want to send this warning card to family? [Get card] [No]",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "SHARE_CARD_CAPTION",
+    "ta": "இது உங்கள் பாதுகாப்புக்காக. தயவுசெய்து பாருங்கள் 🙏",
+    "en": "For your safety, please take a look.",
+    "tts_ta": "இது உங்கள் பாதுகாப்புக்காக. தயவுசெய்து பாருங்கள்",
+    "tts_en": "For your safety, please take a look.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "S_WELCOME",
+    "ta": "வணக்கம்! நான் <b>{BOT_NAME_TA}</b> ({BOT_NAME_EN}).\n\nசந்தேகமான SMS, லிங்க், படம் அல்லது குரல் செய்தியை எனக்கு அனுப்புங்கள். இது மோசடியா என்று தமிழில் சொல்கிறேன்.\n\n<i>அறிவற்றங் காக்கும் கருவி செறுவார்க்கும்\nஉள்ளழிக்கல் ஆகா அரண்</i> — குறள் 421\n\nOTP, PIN யாரிடமும் சொல்லாதீர்கள்.",
+    "en": "Hello! I am <b>{BOT_NAME_TA}</b> ({BOT_NAME_EN}).\n\nForward or send any suspicious SMS, link, image, or voice note. I will analyze whether it is a scam.\n\n<i>Knowledge is a weapon that wards off destruction; an inner fortress which enemies cannot destroy.</i> — Kural 421\n\nNever share your OTP or PIN with anyone.",
+    "tts_ta": "வணக்கம்! நான் அறிவுஅரண். சந்தேகமான செய்தி அல்லது லிங்கை எனக்கு அனுப்புங்கள். இது மோசடியா என்று சொல்கிறேன். ஓ டி பி, பின் யாரிடமும் சொல்லாதீர்கள்.",
+    "tts_en": "Hello! I am Arivaran. Send me a suspicious message or link, and I will check if it looks like a scam. Never share your O T P or P I N.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "S_HEARD",
+    "ta": "நான் கேட்டது: \"{transcript}\". சரியா? [சரி] [மீண்டும் சொல்கிறேன்]",
+    "en": "I heard: \"...\". Correct? [Yes] [Say again]",
+    "tts_ta": "நான் கேட்டது: \"{transcript}\". சரியா? [சரி] [மீண்டும் சொல்கிறேன்]",
+    "tts_en": "I heard: \"...\". Correct? [Yes] [Say again]",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "S_OCR",
+    "ta": "படத்தில் நான் படித்தது:\n\"{ocr_text}\"\nசரியா? [சரி] [திருத்து]",
+    "en": "Text I read from the image. Correct? [Yes] [Edit]",
+    "tts_ta": "படத்தில் நான் படித்தது: \"{ocr_text}\" சரியா? [சரி] [திருத்து]",
+    "tts_en": "Text I read from the image. Correct? [Yes] [Edit]",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "S_NOVOICE",
+    "ta": "குரலைப் புரிந்துகொள்ள முடியவில்லை. தயவுசெய்து மெதுவாக மீண்டும் சொல்லுங்கள் அல்லது எழுதுங்கள்.",
+    "en": "Couldn't understand audio. Please repeat slowly or type.",
+    "tts_ta": "குரலைப் புரிந்துகொள்ள முடியவில்லை. தயவுசெய்து மெதுவாக மீண்டும் சொல்லுங்கள் அல்லது எழுதுங்கள்.",
+    "tts_en": "Couldn't understand audio. Please repeat slowly or type.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "S_WORKING",
+    "ta": "சரிபார்க்கிறேன்… ஒரு நிமிடம்.",
+    "en": "Checking… one moment.",
+    "tts_ta": "சரிபார்க்கிறேன்… ஒரு நிமிடம்.",
+    "tts_en": "Checking… one moment.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "S_ERROR",
+    "ta": "மன்னிக்கவும், இப்போது சரிபார்க்க முடியவில்லை. சிறிது நேரம் கழித்து முயற்சிக்கவும். இதற்கிடையில்: லிங்கைத் தொடாதீர்கள், OTP சொல்லாதீர்கள்.",
+    "en": "Sorry, can't check now. Try later. Meanwhile don't touch the link, don't share OTP.",
+    "tts_ta": "மன்னிக்கவும், இப்போது சரிபார்க்க முடியவில்லை. சிறிது நேரம் கழித்து முயற்சிக்கவும். இதற்கிடையில்: லிங்கைத் தொடாதீர்கள், ஓ டி பி சொல்லாதீர்கள்.",
+    "tts_en": "Sorry, can't check now. Try later. Meanwhile don't touch the link, don't share OTP.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "S_DISTRICT",
+    "ta": "உங்கள் மாவட்டத்தில் உள்ள மோசடிகள் பற்றி எச்சரிக்கை பெற விரும்புகிறீர்களா? உங்கள் மாவட்டத்தை மட்டும் சேமிப்போம், எண் அல்லது பெயர் அல்ல. [ஆம்] [வேண்டாம்]",
+    "en": "Want alerts about scams in your district? We store the district name, not your phone number or name.",
+    "tts_ta": "உங்கள் மாவட்டத்தில் உள்ள மோசடிகள் பற்றி எச்சரிக்கை பெற விரும்புகிறீர்களா? உங்கள் மாவட்டத்தை மட்டும் சேமிப்போம், எண் அல்லது பெயர் அல்ல. [ஆம்] [வேண்டாம்]",
+    "tts_en": "Want alerts about scams in your district? We store the district name, not your phone number or name.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "S_WRONG_OK",
+    "ta": "நன்றி. இந்த முடிவு தவறு என்று பதிவு செய்தேன்.",
+    "en": "Thanks. Recorded that this verdict was wrong.",
+    "tts_ta": "நன்றி. இந்த முடிவு தவறு என்று பதிவு செய்தேன்.",
+    "tts_en": "Thanks. Recorded that this verdict was wrong.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "S_FEEDBACK",
+    "ta": "🙏 உங்கள் கருத்துக்கு நன்றி! இந்த முடிவை எங்கள் குழு மறுஆய்வு செய்து {BOT_NAME_TA_GEN} துல்லியத்தை மேலும் மேம்படுத்தும்.",
+    "en": "Thanks for your feedback. Our team will review this and improve accuracy.",
+    "tts_ta": "உங்கள் கருத்துக்கு நன்றி! இந்த முடிவை எங்கள் குழு மறுஆய்வு செய்து {BOT_NAME_TA_GEN} துல்லியத்தை மேலும் மேம்படுத்தும்.",
+    "tts_en": "Thanks for your feedback. Our team will review this and improve accuracy.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "S_COMING_SOON",
+    "ta": "இந்த வசதி விரைவில் வரும்.",
+    "en": "This feature is coming soon.",
+    "tts_ta": "இந்த வசதி விரைவில் வரும்.",
+    "tts_en": "This feature is coming soon.",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "S_VOICE_RETRY",
+    "en": "I couldn't hear that clearly. Please record again or type the message as text.",
+    "ta": "MISSING - ask the team",
+    "tts_en": "I couldn't hear that clearly. Please record again or type the message as text.",
+    "tts_ta": "MISSING - ask the team",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  },
+  {
+    "id": "S_VOICE_NO_VERDICT",
+    "en": "I can't reliably check a spoken description. If you have the actual message, send it as text or a screenshot. If money or an OTP was involved, call 1930.",
+    "ta": "MISSING - ask the team",
+    "tts_en": "I can't reliably check a spoken description. If you have the actual message, send it as text or a screenshot. If money or an OTP was involved, call 1930.",
+    "tts_ta": "MISSING - ask the team",
+    "status_ta": "needs_native_review",
+    "status_en": "english_draft"
+  }
+]

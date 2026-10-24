@@ -1,0 +1,31 @@
+id,text,label,language
+b01,"HDFC: Your netbanking is locked after failed attempts. Verify identity at http://hdfc-secure-login.info within 1 hour.",scam,en
+b02,"You have been selected for a Rs 50000 gift card. Send Rs 499 delivery charge to claim.",scam,en
+b03,"Mumbai Cyber Cell notice: your number is linked to money laundering. Do not disconnect this call.",scam,en
+b04,"Task job: rate hotels online, earn Rs 800 per task. Deposit Rs 1000 first to unlock tasks.",scam,en
+b05,"Gas connection will be cancelled today. Call this number now to avoid penalty.",scam,en
+b06,"Wrong transfer happened, I am your relative's friend. Tell me the 6 digit code that came to your phone.",scam,en
+b07,"Your Aadhaar is blocked due to illegal activity. Tap here to unblock http://uidai-help.top",scam,en
+b08,"Scan this QR code to receive your Rs 3000 cashback. Enter PIN after scanning.",scam,en
+b09,"Bank manager pesuren. Card block aagum, card number and CVV sollunga",scam,tanglish
+b10,"Neenga prize jeichirukeenga, gift anuppa courier charge Rs 1500 pay pannunga",scam,tanglish
+b11,"Digital arrest case irukku, yaarkum sollaama camera on la irunga",scam,tanglish
+b12,"Part time velai, orey naal la 4000 sambadhikalam, link click pannunga http://earn-daily.xyz",scam,tanglish
+b13,"உங்கள் ஆதார் எண் தடை செய்யப்பட்டுள்ளது. உடனே இந்த லிங்க்கில் சரிபார்க்கவும் http://aadhaar-check.top",scam,ta
+b14,"நீங்கள் லாட்டரியில் வெற்றி பெற்றுள்ளீர்கள். பணம் பெற ரூ 5000 முன்பணம் செலுத்தவும்.",scam,ta
+b15,"உங்கள் வங்கி அட்டை முடக்கப்படும். அட்டை எண் மற்றும் OTP பகிரவும்.",scam,ta
+b16,"Your HDFC card ending 4821 was used for Rs 899 at Amazon. Not you? Call the number on the back of your card.",genuine,en
+b17,"Urgent: please send the project report by 5 pm today.",genuine,en
+b18,"Your OTP is 719304 for UPI registration. Never share this with anyone, including bank staff.",genuine,en
+b19,"Your Zomato order is out for delivery. Track it in the app.",genuine,en
+b20,"Meeting moved to 3 pm. Zoom link: https://zoom.us/j/12345 as before.",genuine,en
+b21,"Your electricity bill for Sept is Rs 780. Last date 30 Oct. Pay on the official TNEB site or app.",genuine,en
+b22,"Happy birthday! Let's celebrate this weekend.",genuine,en
+b23,"Dad, I will transfer the college fee tomorrow morning.",genuine,en
+b24,"Bus stand la irukken, 10 nimisham la varuven",genuine,tanglish
+b25,"Rs 2000 anuppitten, GPay la paarunga",genuine,tanglish
+b26,"Urgent ah illa, naalaiku report anuppunga podhum",genuine,tanglish
+b27,"இன்று மாலை 6 மணிக்கு பள்ளி பெற்றோர் கூட்டம் நடைபெறும்.",genuine,ta
+b28,"உங்கள் கணக்கிலிருந்து ரூ 500 எடுக்கப்பட்டது. இருப்பு ரூ 4200.",genuine,ta
+b29,"தம்பி, அவசரம் இல்லை, நாளை வந்தால் போதும்.",genuine,ta
+b30,"உங்கள் ஆர்டர் இன்று மாலை வந்து சேரும்.",genuine,ta

@@ -1,0 +1,319 @@
+[
+  {
+    "id": 1,
+    "group": "scam",
+    "language": "tamil",
+    "expected_verdict": "SCAM",
+    "text": "உங்கள் எஸ்பிஐ வங்கி கணக்கு இன்றுடன் பிளாக் செய்யப்படும். உடனடியாக இந்த லிங்க்கை கிளிக் செய்து உங்கள் பான் கார்டு மற்றும் OTP விவரங்களை அப்டேட் செய்யவும்: http://sbi-kyc-update.top"
+  },
+  {
+    "id": 2,
+    "group": "scam",
+    "language": "english",
+    "expected_verdict": "SCAM",
+    "text": "Dear customer, your HDFC bank account is suspended due to pending KYC. Click http://hdfc-bank.xyz to verify and share your OTP immediately within 24 hours."
+  },
+  {
+    "id": 3,
+    "group": "scam",
+    "language": "tanglish",
+    "expected_verdict": "SCAM",
+    "text": "Ungal account udane block aagum. Inre intha apk file download panni ungal OTP share seyyavum: http://bit.ly/sbi-app-apk"
+  },
+  {
+    "id": 4,
+    "group": "scam",
+    "language": "tamil",
+    "expected_verdict": "SCAM",
+    "text": "வாழ்த்துகள்! நீங்கள் KBC லக்கி டிராவில் ரூ. 25 லட்சம் வென்றுள்ளீர்கள். பரிசு பெற உடனடியாக பதிவு கட்டணமாக ரூ. 1,500 இந்த எண்ணிற்கு செலுத்தவும்."
+  },
+  {
+    "id": 5,
+    "group": "scam",
+    "language": "english",
+    "expected_verdict": "SCAM",
+    "text": "Electricity Bill Alert: Dear Consumer, your TNEB power supply will be disconnected tonight at 9:30 PM due to unpaid bill. Immediately call officer at 9840123456."
+  },
+  {
+    "id": 6,
+    "group": "scam",
+    "language": "tamil",
+    "expected_verdict": "SCAM",
+    "text": "டிஜிட்டல் அரெஸ்ட் எச்சரிக்கை: மும்பை காவல் துறையிலிருந்து பேசுகிறோம். உங்கள் பெயரில் வந்த பார்சலில் போதைப்பொருள் உள்ளது. கைதை தவிர்க்க உடனே AnyDesk இன்ஸ்டால் செய்யவும்."
+  },
+  {
+    "id": 7,
+    "group": "scam",
+    "language": "tanglish",
+    "expected_verdict": "SCAM",
+    "text": "Part time job alert! YouTube videos like panni daily Rs 5000 sambathikalam. Contact officer on Telegram t.me/earnfastdaily"
+  },
+  {
+    "id": 8,
+    "group": "scam",
+    "language": "english",
+    "expected_verdict": "SCAM",
+    "text": "Congratulations! You won Rs 50,000 cashback from PhonePe. Install AnyDesk to approve the UPI collect request immediately."
+  },
+  {
+    "id": 9,
+    "group": "scam",
+    "language": "tamil",
+    "expected_verdict": "SCAM",
+    "text": "உங்கள் பான் கார்டு ஆதாருடன் இணைக்கப்படவில்லை. அபராதம் மற்றும் சிறை தண்டனையை தவிர்க்க உடனடியாக ரூ. 2000 செலுத்தி இந்த லிங்க்கில் OTP சமர்ப்பிக்கவும் http://pan-update.top"
+  },
+  {
+    "id": 10,
+    "group": "scam",
+    "language": "english",
+    "expected_verdict": "SCAM",
+    "text": "CBI Officer Notice: Your Aadhaar is linked to illegal money laundering transactions. Digital arrest order issued. Call immediately or face arrest."
+  },
+  {
+    "id": 11,
+    "group": "scam",
+    "language": "tanglish",
+    "expected_verdict": "SCAM",
+    "text": "TNEB alert: Inru iravu ungal power cut aagum. Bill pending clearing ku udaney intha no ku call panni gpay seyyavum: 9876543210"
+  },
+  {
+    "id": 12,
+    "group": "scam",
+    "language": "tamil",
+    "expected_verdict": "SCAM",
+    "text": "வீட்டிலிருந்தே எளிய வேலை! கூகிள் ரேட்டிங் கொடுத்து மாதம் ரூ. 60,000 சம்பாதிக்கலாம். சேர டெலிகிராமில் தொடர்பு கொள்ளவும்: t.me/tamiljobhub"
+  },
+  {
+    "id": 13,
+    "group": "scam",
+    "language": "english",
+    "expected_verdict": "SCAM",
+    "text": "Your ICICI Credit Card is blocked. Download RustDesk screen share app from http://192.168.1.1/app.apk and tell your ATM PIN to unblock."
+  },
+  {
+    "id": 14,
+    "group": "scam",
+    "language": "tanglish",
+    "expected_verdict": "SCAM",
+    "text": "FedEx parcel alert: Ungal courier la illegal weapons irukku. Customs officer contact panni digital arrest avoid panna call 9123456789"
+  },
+  {
+    "id": 15,
+    "group": "scam",
+    "language": "tamil",
+    "expected_verdict": "SCAM",
+    "text": "வங்கி மேலாளர்: உங்கள் கணக்கிலிருந்து ரூ. 85,000 பணத்தை மீட்டெடுக்க உடனடியாக உங்கள் OTP எண்ணை சொல்லவும் அல்லது இந்த லிங்க்கை தொடவும் http://tinyurl.com/bank-refund"
+  },
+
+  {
+    "id": 16,
+    "group": "genuine",
+    "language": "english",
+    "expected_verdict": "LIKELY_SAFE",
+    "text": "AD-HDFCBK: Your OTP for transaction of Rs 1,450.00 at Amazon is 492015. Do not share your OTP with anyone, including bank staff."
+  },
+  {
+    "id": 17,
+    "group": "genuine",
+    "language": "tamil",
+    "expected_verdict": "LIKELY_SAFE",
+    "text": "வங்கி எச்சரிக்கை: உங்கள் கணக்கிலிருந்து ரூ. 500 எடுக்கப்பட்டது. உங்கள் OTP எண்ணை யாருடனும் பகிர வேண்டாம். எஸ்பிஐ வங்கி."
+  },
+  {
+    "id": 18,
+    "group": "genuine",
+    "language": "english",
+    "expected_verdict": "LIKELY_SAFE",
+    "text": "VK-SBIINB: Dear Customer, Rs 5,000.00 credited to your A/c ending 4512 on 15-Oct via UPI. Available balance Rs 24,150.00. Visit https://sbi.co.in"
+  },
+  {
+    "id": 19,
+    "group": "genuine",
+    "language": "tanglish",
+    "expected_verdict": "LIKELY_SAFE",
+    "text": "Ungal account la Rs 250 credited aagi ullathu. Intha OTP ya yarukkum share pannatheenga. HDFC Bank."
+  },
+  {
+    "id": 20,
+    "group": "genuine",
+    "language": "tamil",
+    "expected_verdict": "LIKELY_SAFE",
+    "text": "அன்பார்ந்த வாடிக்கையாளரே, உங்களின் மின் கட்டணம் ரூ. 840 வெற்றிகரமாக பெறப்பட்டது. ரசீது பார்க்க https://tneb.gov.in இணையதளத்தை பார்க்கவும்."
+  },
+  {
+    "id": 21,
+    "group": "genuine",
+    "language": "english",
+    "expected_verdict": "LIKELY_SAFE",
+    "text": "AX-ICICIB: 784120 is your secret OTP for ICICI netbanking login. Never disclose OTP to anyone even if caller claims to be from bank."
+  },
+  {
+    "id": 22,
+    "group": "genuine",
+    "language": "english",
+    "expected_verdict": "LIKELY_SAFE",
+    "text": "Your Swiggy order #89214 has been picked up by the delivery partner. Track delivery on the official app."
+  },
+  {
+    "id": 23,
+    "group": "genuine",
+    "language": "tamil",
+    "expected_verdict": "LIKELY_SAFE",
+    "text": "உங்கள் அமேசான் பார்சல் இன்று மாலை 4 மணிக்குள் டெலிவரி செய்யப்படும். டெலிவரி பின்: 4812."
+  },
+  {
+    "id": 24,
+    "group": "genuine",
+    "language": "tanglish",
+    "expected_verdict": "LIKELY_SAFE",
+    "text": "Zomato delivery partner arrives in 10 mins. Enjoy your meal! Please rate the delivery."
+  },
+  {
+    "id": 25,
+    "group": "genuine",
+    "language": "english",
+    "expected_verdict": "LIKELY_SAFE",
+    "text": "ITDEPT: Income Tax refund of Rs 4,500 has been credited to your bank account. Check status at https://incometax.gov.in"
+  },
+  {
+    "id": 26,
+    "group": "genuine",
+    "language": "tamil",
+    "expected_verdict": "LIKELY_SAFE",
+    "text": "ஆதார் OTP: 341890 என்பது உங்கள் ஆதார் சரிபார்ப்பு குறியீடு. இதனை யாருடனும் பகிர வேண்டாம். UIDAI."
+  },
+  {
+    "id": 27,
+    "group": "genuine",
+    "language": "english",
+    "expected_verdict": "LIKELY_SAFE",
+    "text": "Your monthly JioFiber bill of Rs 588 is generated. Pay seamlessly through MyJio app or official website."
+  },
+  {
+    "id": 28,
+    "group": "genuine",
+    "language": "tanglish",
+    "expected_verdict": "LIKELY_SAFE",
+    "text": "Indian Bank alert: Rs 1,200 withdrawn from ATM at Anna Nagar. Remaining balance Rs 18,300. Call 180042500000 if not done by you."
+  },
+  {
+    "id": 29,
+    "group": "genuine",
+    "language": "english",
+    "expected_verdict": "LIKELY_SAFE",
+    "text": "EPFOHO: Your monthly EPF contribution of Rs 1,800 has been credited for the month of September. Visit https://epfindia.gov.in"
+  },
+  {
+    "id": 30,
+    "group": "genuine",
+    "language": "tamil",
+    "expected_verdict": "LIKELY_SAFE",
+    "text": "அஞ்சல் துறை: உங்கள் பதிவு தபால் RP894123910IN சென்னை தலைமை அலுவலகத்திற்கு வந்து சேர்ந்துள்ளது."
+  },
+
+  {
+    "id": 31,
+    "group": "tricky",
+    "language": "english",
+    "expected_verdict": "LIKELY_SAFE",
+    "text": "Check out our new festive shopping discounts at https://hdfcbank.com/festive - terms and conditions apply."
+  },
+  {
+    "id": 32,
+    "group": "tricky",
+    "language": "tamil",
+    "expected_verdict": "LIKELY_SAFE",
+    "text": "அரசு வேலைவாய்ப்பு முகாம் பற்றிய தகவல்களை தெரிந்துகொள்ள https://tn.gov.in இணையதளத்தை பார்க்கவும்."
+  },
+  {
+    "id": 33,
+    "group": "tricky",
+    "language": "tanglish",
+    "expected_verdict": "LIKELY_SAFE",
+    "text": "Machi nalaiku evening cricket match ku 4 PM ku ground ku vanthudunga, maranthudatha."
+  },
+  {
+    "id": 34,
+    "group": "tricky",
+    "language": "english",
+    "expected_verdict": "SCAM",
+    "text": "Urgent notification! Your parcel from DHL is detained by Mumbai Customs. To clear fine of Rs 4,500 send money immediately or digital arrest will follow."
+  },
+  {
+    "id": 35,
+    "group": "tricky",
+    "language": "tamil",
+    "expected_verdict": "SCAM",
+    "text": "உங்களுக்கு மின் கட்டணத்தில் ரூ. 350 பணத்தை ரீஃபண்ட் தருகிறோம். உங்கள் கூகிள் பே செயலியில் வரும் UPI collect request-ஐ உடனடியாக அப்ரூவ் செய்யவும்."
+  },
+  {
+    "id": 36,
+    "group": "tricky",
+    "language": "tanglish",
+    "expected_verdict": "SCAM",
+    "text": "Work from home part time job. Daily Rs 3000 to 5000 income. No experience needed. Join telegram group t.me/tamil_earn_official"
+  },
+  {
+    "id": 37,
+    "group": "tricky",
+    "language": "english",
+    "expected_verdict": "SCAM",
+    "text": "Hello, this is Bank Manager. Your debit card has expired. Kindly send your 16 digit card number, expiry date and CVV immediately."
+  },
+  {
+    "id": 38,
+    "group": "tricky",
+    "language": "tamil",
+    "expected_verdict": "SCAM",
+    "text": "இன்றே கடைசி நாள்! ரூ. 1000 செலுத்தி பதிவு செய்தால் குலுக்கலில் புத்தம் புதிய கார் வெல்லும் வாய்ப்பு. உடனே தொடர்பு கொள்ளவும்."
+  },
+  {
+    "id": 39,
+    "group": "tricky",
+    "language": "tanglish",
+    "expected_verdict": "SCAM",
+    "text": "Urgent notice: ungal pan card bank oda link aagala. 24 hours kulla intha short link la details submit pannunga http://tinyurl.com/pan-link-now"
+  },
+  {
+    "id": 40,
+    "group": "tricky",
+    "language": "english",
+    "expected_verdict": "SUSPICIOUS",
+    "text": "Dear customer, your credit score has dropped. Act now within 24 hours to review your score: http://bit.ly/cibil-check"
+  },
+  {
+    "id": 41,
+    "group": "tricky",
+    "language": "tamil",
+    "expected_verdict": "SUSPICIOUS",
+    "text": "உங்கள் கணக்கு குறித்த விவரங்களை சரிபார்க்கவும். உடனடியாக இந்த லிங்க்கை கிளிக் செய்யவும் http://bit.ly/bank-check"
+  },
+  {
+    "id": 42,
+    "group": "tricky",
+    "language": "tanglish",
+    "expected_verdict": "SUSPICIOUS",
+    "text": "Special loan approved for Rs 5,00,000 without documents. Offer expires today. Apply immediately: http://cutt.ly/easy-loan"
+  },
+  {
+    "id": 43,
+    "group": "tricky",
+    "language": "english",
+    "expected_verdict": "LIKELY_SAFE",
+    "text": "Hello, are you available tomorrow morning for the project sync meeting?"
+  },
+  {
+    "id": 44,
+    "group": "tricky",
+    "language": "tamil",
+    "expected_verdict": "LIKELY_SAFE",
+    "text": "நாளை காலை 10 மணிக்கு குடும்ப விழாவிற்கு அனைவரும் தவறாமல் வந்து சிறப்பிக்க வேண்டுகிறோம்."
+  },
+  {
+    "id": 45,
+    "group": "tricky",
+    "language": "tanglish",
+    "expected_verdict": "LIKELY_SAFE",
+    "text": "Akka, amma sonna vegetables vangitu veetuku vara 8 PM aagum. Neenga saapudunga."
+  }
+]

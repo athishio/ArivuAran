@@ -1,0 +1,31 @@
+id,text,language,label,category,notes
+G_AUD_01,"Rs. 1,500.00 debited from your SBI A/c XX4321 on 22-Oct. Avail balance Rs. 45,210. View statement at https://sbi.co.in/statement",en,genuine,bank_alert,debit alert with official SBI domain
+G_AUD_02,"Your HDFC Bank account debited for Rs 850 at merchant POS. Check details on https://hdfcbank.com/alerts",en,genuine,bank_alert,debit alert with official HDFC domain
+G_AUD_03,"ICICI Bank: Rs 2,499 debited for annual subscription. Manage auto-pay via https://icicibank.com/autopay",en,genuine,bank_alert,debit alert with official ICICI domain
+G_AUD_04,"உங்கள் கணக்கிலிருந்து ரூ 1,200 எடுக்கப்பட்டது. விவரங்களுக்கு அதிகாரப்பூர்வ இணையதளம்: https://sbi.co.in",ta,genuine,bank_alert,Tamil debit alert with official SBI domain
+G_AUD_05,"Your OTP for KYC verification at bank branch counter is 839201. Valid for 10 mins. Do not share with anyone.",en,genuine,otp_legit,legit OTP notice with KYC word
+G_AUD_06,"746291 is your OTP to complete annual KYC update on official netbanking portal. Never disclose this OTP to anyone.",en,genuine,otp_legit,legit OTP notice with KYC word
+G_AUD_07,"வங்கி கிளையில் KYC விவரங்களை சரிபார்க்க உங்கள் OTP 391024. இதை யாருடனும் பகிர வேண்டாம்.",ta,genuine,otp_legit,Tamil legit OTP with KYC word
+G_AUD_08,"Branch KYC verification OTP is 192837. Do not share with bank staff or call agents. Strictly confidential.",en,genuine,otp_legit,legit OTP notice with KYC word
+G_AUD_09,"Urgent maintenance work: TNEB power supply will be shut down in Anna Nagar tomorrow from 9 AM to 4 PM.",en,genuine,utility,utility notice with urgent
+G_AUD_10,"Urgent notice: Scheduled water pipe repairs on Main Road tomorrow. Municipal supply will resume by evening.",en,genuine,utility,utility notice with urgent
+G_AUD_11,"அவசர அறிவிப்பு: பராமரிப்பு பணி காரணமாக உங்கள் பகுதியில் நாளை காலை 10 முதல் 2 மணி வரை மின்தடை ஏற்படும்.",ta,genuine,utility,Tamil utility notice with urgent
+G_AUD_12,"Urgent alert: Gas pipeline maintenance scheduled tonight 11 PM to 3 AM in your ward. Keep main valve closed.",en,genuine,utility,utility notice with urgent
+G_AUD_13,"அம்மா, கொரியர் அனுப்ப நம் வீட்டு PIN code சொல்லுங்க, பார்சலில் எழுதணும்.",ta,genuine,personal,Tamil postal PIN code
+G_AUD_14,"Bro, unga area postal PIN code enna? Amazon delivery address ku venum.",tanglish,genuine,personal,Tanglish postal PIN code
+G_AUD_15,"Uncle, new office PIN code 600028 ah? Letter post panna kekkuren.",tanglish,genuine,personal,Tanglish postal PIN code
+G_AUD_16,"தம்பி, ரேஷன் கார்டு அட்ரஸ்ல PIN code தப்பா இருக்கு, திருத்தணும்.",ta,genuine,personal,Tamil postal PIN code
+G_AUD_17,"Please share grandma's village PIN code so I can send the medicine parcel via speed post.",en,genuine,personal,English postal PIN code
+G_AUD_18,"Your Bluedart shipment #892011 is out for delivery. Track driver location at https://bit.ly/track_bd123",en,genuine,delivery,delivery notice with short link
+G_AUD_19,"Delhivery: Your package will be delivered today by Ramesh. OTP 4491. Live tracking: https://tinyurl.com/del4491",en,genuine,delivery,delivery notice with short link
+G_AUD_20,"உங்கள் பார்சல் இன்று டெலிவரி செய்யப்படும். டெலிவரி பாய் எண் மற்றும் விவரம்: https://t.co/parc_tn98",ta,genuine,delivery,Tamil delivery notice with short link
+S_AUD_01,"482916 is your OTP for transaction. Do not share it with anyone. Your SBI account is blocked! Update KYC immediately: http://sbi-fake-login.example",en,scam,kyc,mitigating abused + phishing link
+S_AUD_02,"Your secret OTP is 994821. Never share this code. Dear customer your electricity will be disconnected tonight, call 9876543210 immediately.",en,scam,utility,mitigating abused + utility threat
+S_AUD_03,"Do not share this OTP with anyone. Congratulations you won Rs 25 lakh in lottery! Pay Rs 5000 fee to claim.",en,scam,prize,mitigating abused + prize fee
+S_AUD_04,"123456 is your login OTP. Strictly confidential. This is Mumbai Cyber Police, stay on video call or you will be arrested.",en,scam,authority,mitigating abused + digital arrest
+S_AUD_05,"உங்கள் OTP 552190. இதை யாருடனும் பகிர வேண்டாம். உங்கள் வங்கி கணக்கு முடக்கப்பட்டுள்ளது, உடனே http://bank-update.example திறக்கவும்.",ta,scam,kyc,Tamil mitigating abused + threat link
+S_AUD_06,"Never share OTP with anyone. Refund of Rs 4000 initiated. Enter your UPI PIN to receive the money in your account.",en,scam,upi_collect,mitigating abused + enter UPI PIN
+S_AUD_07,"Do not share OTP. Download AnyDesk app from http://help-app.example/apk so customer care can verify your blocked card.",en,scam,fake_care,mitigating abused + AnyDesk APK
+S_AUD_08,"882190 is your verification code. Do not disclose. Work from home and earn Rs 3000 daily! Join t.me/fast_scam_example",en,scam,job,mitigating abused + job scam
+S_AUD_09,"Do not share OTP with anyone. Unga bank a/c block aagum, udane KYC update pannunga: http://sbi-fraud.example",tanglish,scam,kyc,Tanglish mitigating abused + KYC link
+S_AUD_10,"OTP is 449201. Never share. Sir I sent Rs 10,000 by mistake, please tell me the OTP you received immediately.",en,scam,otp,mitigating abused + OTP ask

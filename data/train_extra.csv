@@ -1,0 +1,41 @@
+id,text,label,language
+x01,"Dear customer your SBI account will be blocked today. Update KYC now at http://sbi-kyc-update.xyz/login",scam,en
+x02,"Congratulations! You won Rs 25 lakh in Jio lucky draw. Pay Rs 3000 processing fee to claim.",scam,en
+x03,"This is CBI officer. A parcel in your name has drugs. Stay on video call or you will be arrested.",scam,en
+x04,"Part time job: like YouTube videos and earn Rs 5000 daily. Join Telegram group now.",scam,en
+x05,"Your electricity will be cut tonight at 9.30pm. Call 98XXXXXX10 immediately and pay pending bill.",scam,en
+x06,"I sent Rs 10000 to your number by mistake. Please share the OTP you received to return it.",scam,en
+x07,"Your PAN card is suspended. Click http://pan-verify-india.top to reactivate within 24 hours.",scam,en
+x08,"Request to collect Rs 4999 from you. Enter your UPI PIN to receive the money.",scam,en
+x09,"Your SIM will be disconnected in 2 hours. Share Aadhaar OTP to continue service.",scam,en
+x10,"Income tax refund of Rs 18540 approved. Submit card details at http://itax-refund.click to receive.",scam,en
+x11,"Sir ungal bank account block aagidum, udane KYC update pannunga http://hdfc-kyc.online",scam,tanglish
+x12,"Ungalukku 10 lakh lottery vizhundhirukku, processing fee 2000 anuppunga",scam,tanglish
+x13,"Naan police station la irundhu pesuren, ungal Aadhaar la case irukku, video call la vanga",scam,tanglish
+x14,"Pannam thappa anuppitten, vandha OTP ah sollunga please",scam,tanglish
+x15,"Work from home job, daily 3000 sambadhikalam, WhatsApp la join pannunga",scam,tanglish
+x16,"உங்கள் வங்கி கணக்கு இன்று முடக்கப்படும். உடனே KYC புதுப்பிக்க இந்த இணைப்பை அழுத்தவும் http://bank-kyc.top",scam,ta
+x17,"வாழ்த்துகள்! உங்களுக்கு ரூ 10 லட்சம் பரிசு விழுந்துள்ளது. கட்டணம் ரூ 2500 செலுத்தவும்.",scam,ta
+x18,"உங்கள் மின் இணைப்பு இன்றிரவு துண்டிக்கப்படும். உடனே இந்த எண்ணை அழைக்கவும்.",scam,ta
+x19,"தவறுதலாக உங்கள் எண்ணுக்கு பணம் அனுப்பிவிட்டேன். வந்த OTP ஐ சொல்லுங்கள்.",scam,ta
+x20,"உங்கள் மீது சைபர் குற்ற வழக்கு உள்ளது. கைது செய்யப்படுவீர்கள். இப்போதே வீடியோ காலில் வாருங்கள்.",scam,ta
+x21,"Rs 1250.00 debited from A/c XX4821 on 12-Oct. Avl bal Rs 8430. If not you, call your bank.",genuine,en
+x22,"Your OTP for login is 482910. Do not share it with anyone.",genuine,en
+x23,"Your Swiggy order will arrive in 20 minutes.",genuine,en
+x24,"Reminder: your electricity bill of Rs 640 is due on 28 Oct. Pay via the official app or counter.",genuine,en
+x25,"Hi, are we still meeting for lunch tomorrow?",genuine,en
+x26,"Your appointment with Dr. Kumar is confirmed for Monday 10 am.",genuine,en
+x27,"Amazon: your package was delivered to the front door.",genuine,en
+x28,"Your train ticket is confirmed. Coach S3, berth 22.",genuine,en
+x29,"Salary of Rs 32000 credited to your account on 1 Oct.",genuine,en
+x30,"Class tomorrow is moved to 10 am. Please inform others.",genuine,en
+x31,"Naalaiku ethana manikku kelambanum? Naan ready",genuine,tanglish
+x32,"Amma, naan office la irundhu 7 manikku varuven",genuine,tanglish
+x33,"Ungal account la Rs 500 credit aagirukku. Balance Rs 3200.",genuine,tanglish
+x34,"Exam timetable vandhuchu, check pannunga",genuine,tanglish
+x35,"Anna, parcel vandhuruchu, vaasal la vachuruken",genuine,tanglish
+x36,"நாளை காலை 9 மணிக்கு கூட்டம் உள்ளது. தயவுசெய்து வரவும்.",genuine,ta
+x37,"உங்கள் கணக்கில் ரூ 2000 வரவு வைக்கப்பட்டது.",genuine,ta
+x38,"அம்மா, இன்று இரவு உணவுக்கு வருகிறேன்.",genuine,ta
+x39,"உங்கள் மருத்துவ சந்திப்பு திங்கள் காலை 10 மணிக்கு உறுதி செய்யப்பட்டது.",genuine,ta
+x40,"பேருந்து 15 நிமிடம் தாமதமாக வரும்.",genuine,ta

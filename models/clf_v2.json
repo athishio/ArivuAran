@@ -1,0 +1,30 @@
+{
+  "model_name": "clf_v2",
+  "sha256": "675706038264525c438cf5e35f2645930e5f14816a4c869b6656f4d50ee7d9c3",
+  "model_type": "TfidfVectorizer(char_wb, 2-5) + LogisticRegression(balanced)",
+  "training_rows_by_source": {
+    "messages_dev": 33,
+    "train_extra": 40,
+    "train_extra2": 299
+  },
+  "total_training_samples": 372,
+  "classes": [
+    "genuine",
+    "scam"
+  ],
+  "class_balance": {
+    "scam": 189,
+    "genuine": 183
+  },
+  "language_balance": {
+    "en": 133,
+    "ta": 120,
+    "tanglish": 119
+  },
+  "random_seed": 42,
+  "sklearn_version": "1.9.1",
+  "threshold": 0.7,
+  "created_at": "2026-10-23T21:43:56Z",
+  "default_enabled": false,
+  "notes": "train_extra2.csv is AI-written and may share lexical style with synthetic benchmark test cases."
+}

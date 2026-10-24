@@ -1,0 +1,25 @@
+9:28 pm
+Dear Customer,
+
+Your KYC details require
+updating to keep your account
+information current. Please
+review your details using our
+secure test portal:
+
+கி
+https://example.com/kyc-test
+
+If you have already updated
+your KYC, please ignore this
+test notification.
+
+Regards,
+
+Customer Support Team
+
+Demo Bank (Fictional)
+
+Okay Call Yes Nothing
+
+Gj RCS message So (9 sil

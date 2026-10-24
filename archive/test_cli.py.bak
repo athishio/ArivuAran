@@ -1,0 +1,141 @@
+"""
+ArivuAran (அறிவுஅரண்) Interactive Testing CLI.
+Allows instant testing of SMS forwards, links, and messages from the terminal
+without needing Telegram or external webhooks.
+"""
+
+import sys
+import os
+import time
+
+# Ensure root directory is on Python path
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
+if sys.stdout.encoding != "utf-8":
+    try:
+        sys.stdout.reconfigure(encoding="utf-8")
+        sys.stderr.reconfigure(encoding="utf-8")
+    except Exception:
+        pass
+
+from engine.decide import analyse
+from engine.redact import redact, extract_urls, extract_features
+from replies import build_reply, build_buttons
+
+PRESETS = [
+    (
+        "Fake TNEB Power Cut Alert (Tamil)",
+        "மின் இணைப்பு எச்சரிக்கை: உங்கள் மின் கட்டணம் செலுத்தப்படாததால் இன்று இரவு 9 மணிக்கு மின்சாரம் துண்டிக்கப்படும். உடனடியாக 9444123456 என்ற எண்ணில் அதிகாரியை தொடர்பு கொள்ளவும்."
+    ),
+    (
+        "Fake SBI KYC Deactivation SMS (English + Lookalike Link)",
+        "Dear SBI Customer, your YONO account will be deactivated today. Please update your PAN/Aadhaar immediately at http://sbi-kyc-verify.top/login"
+    ),
+    (
+        "Digital Arrest Threat (Tamil AnyDesk APK)",
+        "டிஜிட்டல் அரெஸ்ட் எச்சரிக்கை: மும்பை காவல் துறையிலிருந்து பேசுகிறோம். உங்கள் பார்சலில் போதைப்பொருள் உள்ளது. கைதை தவிர்க்க உடனே AnyDesk இன்ஸ்டால் செய்யவும்."
+    ),
+    (
+        "Part-Time YouTube Like Task Scam (Tanglish)",
+        "Simple part time job work from home. Daily 5000 sambathikalam youtube videos like panni. Contact telegram t.me/fast_income_tamil"
+    ),
+    (
+        "Genuine Bank OTP with Warning (No red flags)",
+        "AX-ICICIB: 784120 is your secret OTP for ICICI netbanking login. Never disclose OTP to anyone even if caller claims to be from bank."
+    ),
+    (
+        "Genuine Amazon Delivery Update (No red flags)",
+        "உங்கள் அமேசான் பார்சல் இன்று மாலை 4 மணிக்குள் டெலிவரி செய்யப்படும். டெலிவரி பின்: 4812."
+    ),
+]
+
+
+def run_test(text: str):
+    print("\n" + "=" * 70)
+    print("ARIVUARAN (அறிவுஅரண்) ANALYSIS REPORT")
+    print("=" * 70)
+    print(f"📥 Input Text:\n\"{text}\"\n")
+
+    # 1. Feature Extraction & Redaction
+    t0 = time.perf_counter()
+    urls = extract_urls(text)
+    redacted_text = redact(text)
+    
+    # 2. Decision Engine
+    result = analyse(text)
+    elapsed_ms = (time.perf_counter() - t0) * 1000.0
+
+    print("🛡️ PII Redaction:")
+    print(f"   • Sanitized Text : \"{redacted_text}\"")
+    print(f"   • Extracted URLs : {urls if urls else 'None'}\n")
+
+    print("📊 Detection Signals Fired:")
+    if result.signals:
+        for s in result.signals:
+            points_str = f"+{s.points}" if s.points > 0 else f"{s.points}"
+            print(f"   • [{points_str} pts] {s.code:<16} : {s.detail}")
+    else:
+        print("   • No suspicious signals detected.")
+
+    print(f"\n🎯 Total Score : {result.score} pts")
+    
+    verdict_badge = {
+        "SCAM": "🚨 SCAM (மோசடி)",
+        "SUSPICIOUS": "🟡 SUSPICIOUS (சந்தேகத்திற்குரியது)",
+        "NO_RED_FLAGS": "ℹ️ NO_RED_FLAGS (எச்சரிக்கை அறிகுறி இல்லை)"
+    }.get(result.verdict, result.verdict)
+    
+    print(f"🏆 Final Verdict: {verdict_badge}")
+    print(f"⚡ Processing Latency: {elapsed_ms:.2f} ms (Deterministic < 50ms)")
+
+    # 3. Formatted Tamil Reply (from official templates in data/replies_ta.json)
+    from bot import build_verdict_reply
+    reply_card = build_verdict_reply(result)
+
+    print("\n" + "-" * 70)
+    print("🗣️ Official Bot Reply (Tamil Template Output):")
+    print("-" * 70)
+    print(reply_card)
+    print("-" * 70)
+
+
+def main():
+    if len(sys.argv) > 1:
+        # Direct CLI argument mode: python test_cli.py "some message text"
+        raw_text = " ".join(sys.argv[1:])
+        run_test(raw_text)
+        return
+
+    while True:
+        print("\n" + "=" * 50)
+        print("  ARIVUARAN (அறிவுஅரண்) TEST BENCH")
+        print("=" * 50)
+        print("Choose a test sample:")
+        for idx, (title, _) in enumerate(PRESETS, 1):
+            print(f"  {idx}. {title}")
+        print("  7. Type or paste custom message")
+        print("  8. Run complete 60-sample benchmark (tests/eval.py)")
+        print("  0. Exit")
+        print("-" * 50)
+        
+        choice = input("Enter choice (0-8): ").strip()
+        if choice == "0":
+            print("Exiting test bench. Goodbye!")
+            break
+        elif choice in [str(i) for i in range(1, 7)]:
+            idx = int(choice) - 1
+            title, text = PRESETS[idx]
+            run_test(text)
+        elif choice == "7":
+            custom_text = input("\nPaste or type message to test:\n> ").strip()
+            if custom_text:
+                run_test(custom_text)
+        elif choice == "8":
+            from tests.eval import print_evaluation_report
+            print_evaluation_report()
+        else:
+            print("Invalid choice, please select 0-8.")
+
+
+if __name__ == "__main__":
+    main()

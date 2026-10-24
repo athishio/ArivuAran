@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARIVUARAN (அறிவுஅரண்) — Live UI Preview</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', 'Nirmala UI', 'Noto Sans Tamil', -apple-system, sans-serif;
+            background-color: #0f172a;
+            color: #f1f5f9;
+            margin: 0;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            max-width: 680px;
+            width: 100%;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+        .header h1 {
+            color: #38bdf8;
+            margin: 0;
+            font-size: 26px;
+        }
+        .header p {
+            color: #94a3b8;
+            font-size: 14px;
+            margin-top: 6px;
+        }
+        .kural-box {
+            background: #1e293b;
+            border-left: 4px solid #38bdf8;
+            padding: 12px 16px;
+            border-radius: 6px;
+            font-size: 13px;
+            color: #cbd5e1;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        .card {
+            background: #1e293b;
+            border-radius: 12px;
+            border: 1px solid #334155;
+            padding: 24px;
+            box-shadow: 0 10px 25px -5px rgba(0,0,0,0.3);
+            margin-bottom: 20px;
+        }
+        .scam-badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+        .badge-scam { background: #7f1d1d; color: #fecaca; border: 1px solid #dc2626; }
+        .badge-suspicious { background: #713f12; color: #fef08a; border: 1px solid #eab308; }
+        .badge-safe { background: #0c4a6e; color: #bae6fd; border: 1px solid #0284c7; }
+        .reply-text {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #f8fafc;
+            white-space: pre-wrap;
+        }
+        .buttons-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .btn {
+            background: #0284c7;
+            color: white;
+            border: none;
+            padding: 12px 16px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            text-align: center;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .btn:hover { background: #0369a1; }
+        .btn-full { grid-column: span 2; background: #334155; }
+        .btn-full:hover { background: #475569; }
+        .input-box {
+            margin-top: 10px;
+            padding: 12px;
+            background: #0f172a;
+            border: 1px solid #334155;
+            border-radius: 8px;
+            color: #94a3b8;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>ARIVUARAN (அறிவுஅரண்)</h1>
+            <p>Telegram Visual Message Card Preview</p>
+        </div>
+
+        <div class="kural-box">
+            <b>அறிவற்றங் காக்கும் கருவி செறுவார்க்கும்<br>உள்ளழிக்கல் ஆகா அரண்</b> — திருக்குறள் 421
+        </div>
+
+        <!-- Sample 1: Scam Card -->
+        <div class="card">
+            <span class="scam-badge badge-scam">🚨 SCAM (மோசடி) — 6 pts</span>
+            <div class="input-box">
+                <b>📥 பயனர் அனுப்பிய செய்தி:</b><br>
+                "Dear SBI Customer, your account is blocked. Update KYC immediately: http://sbi-kyc-verify.top"
+            </div>
+            <div class="reply-text">
+⚠️ <b>இது மோசடி போல் உள்ளது.</b>
+காரணங்கள்:
+1. லிங்க் வங்கியின் பெயரைப் போல் தோன்றுகிறது, ஆனால் உண்மையான முகவரி வேறு.
+2. KYC புதுப்பிக்காவிட்டால் கணக்கு முடங்கும் என்று பயமுறுத்துகிறது.
+
+செய்ய வேண்டியவை:
+• லிங்கைத் தொடாதீர்கள்.
+• OTP, PIN யாரிடமும் சொல்லாதீர்கள்.
+• சந்தேகம் இருந்தால் உங்கள் வங்கியின் அதிகாரப்பூர்வ எண்ணை அழையுங்கள்.
+மேலும் கேட்க: "ஏன்?" / "என்ன செய்வது?"
+            </div>
+
+            <div class="buttons-grid">
+                <div class="btn">ஏன்?</div>
+                <div class="btn">என்ன செய்வது?</div>
+                <div class="btn">கற்றுக்கொள்</div>
+                <div class="btn">குடும்பத்துக்கு அனுப்பு</div>
+                <div class="btn btn-full">நான் ஏற்கனவே...</div>
+            </div>
+        </div>
+
+        <!-- Sample 2: Neutral Card -->
+        <div class="card">
+            <span class="scam-badge badge-safe">ℹ️ NO RED FLAGS (எச்சரிக்கை அறிகுறி இல்லை)</span>
+            <div class="input-box">
+                <b>📥 பயனர் அனுப்பிய செய்தி:</b><br>
+                "AX-ICICIB: 784120 is your secret OTP for login. Never disclose OTP to anyone."
+            </div>
+            <div class="reply-text">
+ℹ️ <b>இதில் எச்சரிக்கை அறிகுறிகள் எதுவும் கிடைக்கவில்லை.</b>
+ஆனால் இது பாதுகாப்பானது என்று அர்த்தம் இல்லை. தெரியாத எண்ணிலிருந்து வந்தால் கவனமாக இருங்கள். OTP, PIN யாரிடமும் சொல்லாதீர்கள்.
+            </div>
+        </div>
+    </div>
+</body>
+</html>

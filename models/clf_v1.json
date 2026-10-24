@@ -1,0 +1,13 @@
+{
+  "model_type": "TfidfVectorizer(char_wb, 2-5) + LogisticRegression(balanced)",
+  "training_samples": 73,
+  "classes": [
+    "genuine",
+    "scam"
+  ],
+  "class_balance": {
+    "scam": 39,
+    "genuine": 34
+  },
+  "default_enabled": false
+}

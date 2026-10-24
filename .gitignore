@@ -1,0 +1,53 @@
+# Environment & Secrets (NEVER COMMIT SENSITIVE TOKENS OR SALTS)
+.env
+.env.local
+.env.*.local
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python Bytecode & Testing Caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Databases & Runtime Storage
+*.db
+*.sqlite
+*.sqlite3
+arivaran.db
+
+# Backup folders
+backup_*/
+backup_pre_voice_in/
+
+# Large Model Binaries (>100MB hard limit on GitHub)
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.onnx
+models/whisper/
+models/**/model.bin
+
+# Audio & Card Cache (runtime generated files)
+cache/audio/*.mp3
+cache/audio/*.ogg
+cache/audio/*.wav
+!cache/audio/.gitkeep
+cache/cards/*.png
+cache/cards/*.jpg
+cache/cards/*.jpeg
+!cache/cards/.gitkeep
+
+# Operating System & IDE Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

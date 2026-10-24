@@ -1,0 +1,67 @@
+id,text,language,label,category,notes
+M001,"Dear customer, your SBI account will be blocked today. Update KYC immediately: http://sbi-kyc-update.example/login",en,scam,kyc,
+M002,"Congratulations! You won Rs 25,00,000 in KBC lottery. Pay Rs 5,000 processing fee to claim. Call 98XXXXXX01",en,scam,prize,
+M003,"This is Mumbai Cyber Police. A parcel in your name has drugs. Stay on video call or you will be arrested. Pay Rs 50,000 to clear the case.",en,scam,authority,digital-arrest style
+M004,"Work from home! Like YouTube videos and earn Rs 3,000 daily. Join our Telegram group: t.me/earnfast_example",en,scam,job,
+M005,"Your electricity will be disconnected tonight at 9:30 PM. Call 98XXXXXX02 immediately to update bill.",en,scam,utility,
+M006,"Sir, I sent Rs 10,000 to you by mistake. Please share the OTP you received so I can reverse it.",en,scam,otp,
+M007,"Guaranteed 200% return in 10 days. Join our VIP stock tips group. Limited seats, invest today.",en,scam,invest,
+M008,"Collect request: Rs 4,999 from Refund Dept. Enter your UPI PIN to receive the refund.",en,scam,upi_collect,
+M009,"Download QuickSupport app from this link so our customer care can fix your card issue: http://bank-help-app.example/apk",en,scam,fake_care,
+M010,"Your Aadhaar is linked to illegal activity. Call TRAI officer now to avoid SIM disconnection.",en,scam,authority,
+M011,"அன்புள்ள வாடிக்கையாளரே, உங்கள் வங்கி கணக்கு இன்று முடக்கப்படும். உடனே KYC புதுப்பிக்க: http://bank-kyc-tn.example/update",ta,scam,kyc,NR
+M012,"வாழ்த்துகள்! நீங்கள் ரூ 10 லட்சம் பரிசு வென்றுள்ளீர்கள். பரிசு பெற ரூ 3,000 கட்டணம் செலுத்துங்கள்.",ta,scam,prize,NR
+M013,"நான் சைபர் கிரைம் அதிகாரி. உங்கள் பெயரில் வழக்கு உள்ளது. வீடியோ காலில் இருங்கள், இல்லையெனில் கைது செய்யப்படுவீர்கள்.",ta,scam,authority,NR
+M014,"வீட்டிலிருந்தே வேலை. தினம் ரூ 2,000 சம்பாதிக்கலாம். முதலில் ரூ 500 பதிவுக் கட்டணம் செலுத்துங்கள்.",ta,scam,job,NR
+M015,"ஐயா, தவறுதலாக உங்கள் எண்ணுக்கு ரூ 5,000 அனுப்பிவிட்டேன். உங்களுக்கு வந்த OTP-ஐ சொல்லுங்கள்.",ta,scam,otp,NR
+M016,"உங்கள் மின் இணைப்பு இன்று இரவு துண்டிக்கப்படும். உடனே இந்த எண்ணை அழைக்கவும்: 98XXXXXX03",ta,scam,utility,NR
+M017,"இரண்டு மடங்கு லாபம் உறுதி! இன்றே பணம் போடுங்கள். இடங்கள் குறைவு.",ta,scam,invest,NR
+M018,"உங்களுக்கு ரூ 2,000 திரும்பப் பெற, UPI PIN உள்ளிடுங்கள்.",ta,scam,upi_collect,NR
+M019,"உங்கள் கார்டு தடுக்கப்பட்டுள்ளது. இந்த செயலியை பதிவிறக்கவும்: http://card-help.example/app.apk",ta,scam,fake_care,NR
+M020,"உங்கள் ஆதார் எண் சட்டவிரோத செயலில் பயன்படுத்தப்பட்டுள்ளது. உடனே அழைக்கவும்.",ta,scam,authority,NR
+M021,"கூரியர் தங்கியுள்ளது. முகவரி சரிபார்க்க ரூ 25 செலுத்துங்கள்: http://courier-fee.example/pay",ta,scam,parcel,NR
+M022,"உங்கள் PAN card காலாவதியாகிவிட்டது. இன்றே புதுப்பிக்கவும், இல்லையெனில் கணக்கு முடங்கும்: http://pan-update.example",ta,scam,kyc,NR
+M023,"Dear customer ungal bank account block aagum. Udane KYC update pannunga: http://kyc-tn-bank.example",tanglish,scam,kyc,NR
+M024,"Congrats! Neenga 5 lakh prize jeichirukeenga. Claim panna Rs 2000 fee kattunga.",tanglish,scam,prize,NR
+M025,"Naan police officer pesuren. Ungal mela case irukku. Video call la irunga, illana arrest.",tanglish,scam,authority,NR
+M026,"Work from home job. Daily Rs 1500. Mudhalla Rs 300 registration fee anuppunga.",tanglish,scam,job,NR
+M027,"Sir thappa Rs 8000 ungalukku anuppitten. Unga phone ku vandha OTP sollunga please.",tanglish,scam,otp,NR
+M028,"Ungal current bill pending. Inniku night current cut aagum. Indha number ku call pannunga 98XXXXXX04",tanglish,scam,utility,NR
+M029,"Double profit guaranteed! Indha group la join aagunga, limited seats.",tanglish,scam,invest,NR
+M030,"Refund vara UPI PIN podunga. Rs 3000 collect request accept pannunga.",tanglish,scam,upi_collect,NR
+M031,"Unga card block aayiduchu. AnyDesk install panni code anuppunga, naan help panren.",tanglish,scam,fake_care,NR
+M032,"Aadhaar misuse aagirukku. Udane indha number ku call pannunga illana SIM cut aagum.",tanglish,scam,authority,NR
+M033,"Loan approved Rs 2 lakh! Processing fee Rs 1500 mudhalla kattunga, apparam amount varum.",tanglish,scam,loan,NR
+M034,"Hi sir, part time job. YouTube like pannina Rs 500. Telegram link: t.me/likejob_example",tanglish,scam,job,NR
+M035,"Your Amazon order #123-4567890 has been shipped and will arrive on Friday.",en,genuine,order,
+M036,"Hi, are we still meeting for lunch tomorrow at 1 PM?",en,genuine,personal,
+M037,"Your electricity bill of Rs 842 for September is generated. Pay through the official app or at the counter. Due date 25 Oct.",en,genuine,utility,
+M038,"Rs 500.00 debited from A/c XX1234 on 20-Oct at a store. Avl bal Rs 12,340.",en,genuine,bank_alert,
+M039,"Reminder: Your appointment with Dr. Kumar is tomorrow at 5 PM.",en,genuine,appointment,
+M040,"Your train ticket PNR 1234567890 is confirmed. Coach S4, berth 23.",en,genuine,travel,
+M041,"நாளை மாலை 5 மணிக்கு கூட்டம் உள்ளது. தயவுசெய்து வரவும்.",ta,genuine,personal,NR
+M042,"அம்மா, நான் ஆபீஸ்ல இருந்து 7 மணிக்கு வருவேன். சாப்பாடு வச்சிடுங்க.",ta,genuine,personal,NR
+M043,"உங்கள் கணக்கில் ரூ 500 வரவு வைக்கப்பட்டது. இருப்பு ரூ 3,200.",ta,genuine,bank_alert,NR
+M044,"இன்று மாலை மழை பெய்ய வாய்ப்புள்ளது. குடை எடுத்துச் செல்லுங்கள்.",ta,genuine,weather,NR
+M045,"பள்ளி நாளை விடுமுறை. மறுநாள் வழக்கம்போல் நடைபெறும்.",ta,genuine,school,NR
+M046,"உங்கள் ஆர்டர் நாளை காலை டெலிவரி செய்யப்படும்.",ta,genuine,order,NR
+M047,"பொங்கல் வாழ்த்துகள்! குடும்பத்துடன் மகிழ்ச்சியாக இருங்கள்.",ta,genuine,greeting,NR
+M048,"Amma, naan 7 mani ku veetuku varen. Dinner ready ah?",tanglish,genuine,personal,NR
+M049,"Bro, naalaiku match pakka varriya? 6 mani ku start.",tanglish,genuine,personal,NR
+M050,"Ungal gas cylinder naalaiku delivery aagum.",tanglish,genuine,delivery,NR
+M051,"Meeting naalaiku 10 mani ku. Laptop kondu vaanga.",tanglish,genuine,work,NR
+M052,"Sir, unga fees receipt attach pannirukken. Check pannunga.",tanglish,genuine,school,NR
+M053,"Rs 200 recharge success. Validity 28 days.",tanglish,genuine,telecom,NR
+M054,"Da, college la fee last date Friday. Marakaama kattu.",tanglish,genuine,school,NR
+M055,"Your OTP for login to Example Bank app is 482916. Do not share it with anyone. Valid for 5 minutes.",en,genuine,otp_legit,tricky: real OTP message contains the word OTP
+M056,"Dear customer, please complete your KYC at your nearest branch with original ID documents. No link or call needed.",en,genuine,kyc_legit,tricky: KYC word but no link and no threat
+M057,"Your account will be debited Rs 999 tomorrow for your Netflix renewal. Manage at netflix.com/account.",en,genuine,subscription,tricky: debit + real brand domain
+M058,"Urgent: Your electricity supply will be interrupted tomorrow 10 AM to 2 PM for maintenance in Sulur area.",en,genuine,utility,tricky: urgent word but no ask
+M059,"உங்கள் OTP 482916. இதை யாருடனும் பகிர வேண்டாம்.",ta,genuine,otp_legit,NR; tricky: Tamil OTP notice
+M060,"Bro, link pathi sollren: https://www.youtube.com/watch?v=example - indha video paaru, super.",tanglish,genuine,personal,NR; tricky: harmless link
+M061,"Kindly share OTP only on the official app screen. Our staff will never call to ask for OTP.",en,genuine,awareness,tricky: awareness message mentions OTP
+M062,"S B I Bank: Ur a/c wil b blokd. Updt PAN now at short.example/aB3dE",en,scam,kyc,tricky: spaced letters + short link
+M063,"Hello, I found your resume. Salary 40k per month, no experience needed. Just WhatsApp 98XXXXXX05 to start.",en,scam,job,tricky: no link
+M064,"Hi mom, I lost my phone, this is my new number. Please send Rs 15,000 urgently, I will explain later.",en,scam,family_impersonation,tricky: no link no OTP
+M065,"Sir, this is from your bank. We noticed unusual activity. Please confirm your card last 4 digits and expiry for verification.",en,scam,bank_impersonation,tricky: polite and no link
+M066,"நீங்கள் தேர்ந்தெடுக்கப்பட்டீர்கள்! ₹500 பெற இந்த UPI கோரிக்கையை ஏற்கவும்.",ta,scam,upi_collect,NR; tricky: no PIN word
