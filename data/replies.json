@@ -182,7 +182,7 @@
   {
     "id": "F_NAME",
     "ta": "இது \"{scam_type_ta}\" வகை மோசடி. தெரிந்துகொள்ள \"கற்றுக்கொள்\" என்று சொல்லுங்கள்.",
-    "en": "This is a \"{type}\" scam. Say \"learn\" to know more.",
+    "en": "This is a \"{scam_type}\" scam. Say \"learn\" to know more.",
     "tts_ta": "நான் அறிவுஅரண். சந்தேகமான செய்திகளை சரிபார்க்க உதவும் தளம்.",
     "tts_en": "I am Arivaran, an automated helper to detect digital and financial scams.",
     "status_ta": "needs_native_review",
@@ -191,9 +191,9 @@
   {
     "id": "F_WHY",
     "ta": "காரணங்கள் மீண்டும்:\n{reason_list}",
-    "en": "Reasons again.",
+    "en": "Reasons again:\n{reason_list}",
     "tts_ta": "கண்டறியப்பட்ட காரணங்கள் மீண்டும் தெரிவிக்கப்படுகின்றன.",
-    "tts_en": "Repeating the detection reasons for this message.",
+    "tts_en": "Reasons again:\n{reason_list}",
     "status_ta": "needs_native_review",
     "status_en": "english_draft"
   },
@@ -236,7 +236,7 @@
   {
     "id": "F_SAFE",
     "ta": "\"பாதுகாப்பானது\" என்று நான் சொல்ல மாட்டேன். {verdict_sentence} OTP, PIN யாரிடமும் சொல்லாதீர்கள்.",
-    "en": "I won't say \"safe\". {verdict}. Never share OTP/PIN.",
+    "en": "I won't say \"safe\". {verdict_sentence} Never share OTP/PIN.",
     "tts_ta": "அறிவுஅரண் இதை பாதுகாப்பானது என்று கூறாது. சந்தேகமிருந்தால் கவனமாக இருங்கள்.",
     "tts_en": "Arivaran will not declare any message safe. Stay cautious if from an unknown sender.",
     "status_ta": "needs_native_review",
