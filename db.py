@@ -163,6 +163,29 @@ def last_check_id(sender_hash: str, db_path: Optional[str] = None) -> Optional[i
         return row["id"] if row else None
 
 
+def get_last_check(sender_hash: str, db_path: Optional[str] = None) -> Optional[Dict[str, Any]]:
+    """Retrieves the most recent check record for this sender hash."""
+    with get_connection(db_path) as conn:
+        cursor = conn.cursor()
+        cursor.execute("""
+            SELECT id, ts, sender_hash, msg_type, score, verdict, fired_rules, feedback
+            FROM checks
+            WHERE sender_hash = ?
+            ORDER BY id DESC
+            LIMIT 1
+        """, (sender_hash,))
+        row = cursor.fetchone()
+        if not row:
+            return None
+        res = dict(row)
+        if isinstance(res.get("fired_rules"), str):
+            try:
+                res["fired_rules"] = json.loads(res["fired_rules"])
+            except Exception:
+                res["fired_rules"] = []
+        return res
+
+
 def log_feedback(sender_hash: str, feedback_text: str, db_path: Optional[str] = None) -> bool:
     """Updates feedback for the sender's most recent check."""
     cid = last_check_id(sender_hash, db_path=db_path)

@@ -38,7 +38,11 @@ def build_card_html(scam_type: str, headline: str, advice: str, lang: str = "ta"
     """Builds clean HTML for warning card with Noto Sans Tamil and Latin fallback."""
     badge_text = "⚠️ எச்சரிக்கை" if lang == "ta" else "⚠️ SCAM ALERT"
     type_label = "வகை:" if lang == "ta" else "Type:"
-    footer_brand = "அறிவுஅரண் (Arivaran)"
+    clean_type = scam_type.strip() if scam_type else ""
+    if not clean_type or clean_type.lower() in ("unknown", "none"):
+        clean_type = "மோசடி எச்சரிக்கை" if lang == "ta" else "Suspicious Message"
+
+    footer_brand = "அறிவுஅரண் (ARIVUARAN)" if lang == "ta" else "ARIVUARAN"
     footer_warn = "OTP, PIN யாரிடமும் சொல்லாதீர்கள்" if lang == "ta" else "Never share OTP or PIN with anyone"
 
     return f"""<!DOCTYPE html>
@@ -132,7 +136,7 @@ def build_card_html(scam_type: str, headline: str, advice: str, lang: str = "ta"
     <div class="headline">{headline}</div>
     <div class="alert-box">
       <div class="alert-title">{type_label}</div>
-      <div class="alert-text">{scam_type}</div>
+      <div class="alert-text">{clean_type}</div>
     </div>
     <div class="advice">{advice}</div>
     <div class="footer">
@@ -172,7 +176,7 @@ async def render_share_card(
         async with async_playwright() as p:
             browser = await p.chromium.launch(**launch_kwargs)
             page = await browser.new_page(viewport={"width": 560, "height": 400})
-            await page.set_content(html_content, wait_until="networkidle")
+            await page.set_content(html_content, wait_until="domcontentloaded", timeout=10000)
             card_el = await page.query_selector(".card")
             if card_el:
                 await card_el.screenshot(path=out_path)

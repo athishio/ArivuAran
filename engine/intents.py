@@ -305,6 +305,8 @@ SCAM_TYPE_TO_TEACH_ID: Dict[str, str] = {
 }
 
 SCAM_TYPE_TA_NAMES: Dict[str, str] = {
+    "threat": "மின் துண்டிப்பு / மிரட்டல் மோசடி",
+    "urgency": "அவசர அச்சுறுத்தல் மோசடி",
     "kyc": "KYC / வங்கி கணக்கு முடக்கம்",
     "otp": "OTP கோரிக்கை",
     "ask_sensitive": "ரகசிய விவரங்கள் கோரிக்கை",
@@ -319,7 +321,41 @@ SCAM_TYPE_TA_NAMES: Dict[str, str] = {
     "payment_push": "பணம் பெறும் கோரிக்கை",
     "fake_care": "போலி வாடிக்கையாளர் சேவை",
     "remote_access": "ஆபத்தான செயலி நிறுவல்",
-    "unknown": "சந்தேகத்திற்கிடமான செய்தி",
+    "callback": "போலி உதவி எண் மோசடி",
+    "shortener": "ஆபத்தான சுருக்கப்பட்ட இணைப்பு",
+    "lookalike": "போலி இணையதள இணைப்பு",
+    "userinfo": "போலி இணையதள இணைப்பு",
+    "brand_mismatch": "போலி நிறுவன இணைப்பு",
+    "known_bad": "அறியப்பட்ட மோசடி இணைப்பு",
+    "fee_first": "முன்பணம் கேட்கும் மோசடி",
+    "unknown": "மோசடி எச்சரிக்கை",
+}
+
+SCAM_TYPE_EN_NAMES: Dict[str, str] = {
+    "threat": "Disconnection / Legal Threat",
+    "urgency": "Urgent Threat Alert",
+    "kyc": "Bank KYC Phishing",
+    "otp": "OTP / Credential Theft",
+    "ask_sensitive": "Sensitive Info Request",
+    "prize": "Fake Prize / Lottery",
+    "authority": "Police / Government Extortion",
+    "digital_arrest": "Digital Arrest Extortion",
+    "job": "Part-Time Job Scam",
+    "job_task": "Task / Video Like Scam",
+    "invest": "Fake Investment / High Return",
+    "upi_collect": "UPI Collect Request",
+    "pin_request": "UPI PIN Request",
+    "payment_push": "Payment Request Scam",
+    "fake_care": "Fake Customer Care",
+    "remote_access": "Malicious App / Screen Share",
+    "callback": "Fake Support Callback Number",
+    "shortener": "Suspicious Shortened Link",
+    "lookalike": "Phishing / Lookalike Link",
+    "userinfo": "Phishing Link",
+    "brand_mismatch": "Fake Official Link",
+    "known_bad": "Known Malicious Link",
+    "fee_first": "Advance Fee Fraud",
+    "unknown": "Suspicious Scam Alert",
 }
 
 
@@ -463,9 +499,11 @@ def resolve_intent_response(
         entry = get_reply("F_NAME")
         st_key = (sess.scam_type or "").lower()
         if lang_key == "en":
-            scam_type_label = st_key.replace("_", " ").title() if st_key else "Suspicious Message"
+            scam_type_label = SCAM_TYPE_EN_NAMES.get(st_key) or (st_key.replace("_", " ").title() if st_key else "Suspicious Scam Alert")
+            if scam_type_label.lower() in ("unknown", "none"):
+                scam_type_label = "Suspicious Scam Alert"
         else:
-            scam_type_label = SCAM_TYPE_TA_NAMES.get(st_key, "சந்தேகத்திற்கிடமான செய்தி")
+            scam_type_label = SCAM_TYPE_TA_NAMES.get(st_key, "மோசடி எச்சரிக்கை")
         text = format_template(_get_txt(entry), scam_type_ta=scam_type_label, scam_type=scam_type_label)
         tts_tmpl = _get_tts(entry) or text
         return intent_id, text, format_template(tts_tmpl, scam_type_ta=scam_type_label, scam_type=scam_type_label)

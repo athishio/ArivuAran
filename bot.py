@@ -43,6 +43,7 @@ from engine.intents import (
     session_manager,
     SIGNAL_TO_REASON_ID,
     SCAM_TYPE_TA_NAMES,
+    SCAM_TYPE_EN_NAMES,
     INC_KEYWORDS,
     FOLLOWUP_KEYWORDS,
 )
@@ -387,13 +388,27 @@ async def handle_message(user_id: int, msg_type: str, content: Any, chat_id: Opt
 
             elif callback_id == "SHARE_CARD_GET":
                 sess = session_manager.get(effective_chat_id)
-                st_key = (sess.scam_type if sess else "") or "unknown"
-                scam_type_ta = SCAM_TYPE_TA_NAMES.get(st_key, "சந்தேகத்திற்கிடமான செய்தி")
-                scam_type_label = scam_type_ta if user_lang == "ta" else st_key.replace("_", " ").title()
+                st_key = (sess.scam_type if sess else "")
+                if not st_key:
+                    # Fall back to latest database record if session expired or bot restarted
+                    last_chk = db.get_last_check(sender_hash)
+                    if last_chk and last_chk.get("fired_rules"):
+                        st_key = str(last_chk["fired_rules"][0]).lower()
+                    elif last_chk and last_chk.get("verdict"):
+                        st_key = str(last_chk["verdict"]).lower()
+                    else:
+                        st_key = "unknown"
+
+                scam_type_ta = SCAM_TYPE_TA_NAMES.get(st_key.lower()) or SCAM_TYPE_TA_NAMES.get("unknown", "மோசடி எச்சரிக்கை")
+                scam_type_en = SCAM_TYPE_EN_NAMES.get(st_key.lower()) or st_key.replace("_", " ").title()
+                if scam_type_en.lower() in ("unknown", "none", ""):
+                    scam_type_en = "Suspicious Scam Alert"
+
+                scam_type_label = scam_type_ta if user_lang == "ta" else scam_type_en
                 caption_entry = get_reply("SHARE_CARD_CAPTION")
                 caption_txt = caption_entry[user_lang] if caption_entry else ("இது உங்கள் பாதுகாப்புக்காக. தயவுசெய்து பாருங்கள் 🙏" if user_lang == "ta" else "This is for your safety. Please take a look 🙏")
 
-                headline = "மோசடி எச்சரிக்கை! (Scam Alert)" if user_lang == "ta" else "Scam Alert!"
+                headline = "மோசடி எச்சரிக்கை!" if user_lang == "ta" else "Scam Alert!"
                 advice = (
                     "இப்படி ஒரு செய்தி வந்தது. இது மோசடி. லிங்கைத் தொடாதீர்கள். OTP, PIN யாரிடமும் சொல்லாதீர்கள்."
                     if user_lang == "ta"
