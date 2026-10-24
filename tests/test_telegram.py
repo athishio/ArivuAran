@@ -147,13 +147,13 @@ async def test_handle_message_text_scam():
         v_args, v_kwargs = mock_send.call_args_list[1]
         assert "மோசடி" in v_args[1]
         assert "buttons" not in v_kwargs or v_kwargs["buttons"] is None
-        # Call 3: Follow-up message with 5 buttons
+        # Call 3: Follow-up message with 4 buttons
         f_args, f_kwargs = mock_send.call_args_list[2]
         assert "தெரிந்துகொள்ள" in f_args[1]
         buttons = f_kwargs.get("buttons", [])
-        assert len(buttons) == 5
+        assert len(buttons) == 4
         btn_ids = [b["id"] for b in buttons]
-        assert btn_ids == ["F_WHY", "F_TODO", "F_LEARN", "F_SHARE", "INC_MENU"]
+        assert btn_ids == ["F_WHY", "F_TODO", "F_LEARN", "INC_MENU"]
 
 
 @pytest.mark.asyncio
@@ -318,5 +318,5 @@ async def test_handle_message_audio_and_file_cleanup():
         assert mock_send.await_count == 4
         last_args, last_kwargs = mock_send.call_args_list[-1]
         assert "தெரிந்துகொள்ள" in last_args[1]
-        assert "buttons" in last_kwargs and len(last_kwargs["buttons"]) == 5
+        assert "buttons" in last_kwargs and len(last_kwargs["buttons"]) == 4
         assert not os.path.exists(fake_temp_file)

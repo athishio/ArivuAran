@@ -203,7 +203,6 @@ def build_followup_message(verdict: str, lang: str = "ta") -> Tuple[str, List[Di
             buttons = [
                 {"id": "F_TODO", "title": "What should I do?"},
                 {"id": "F_LEARN", "title": "Learn"},
-                {"id": "F_SHARE", "title": "Send to family"},
                 {"id": "INC_MENU", "title": "I already..."},
             ]
         else:
@@ -211,7 +210,6 @@ def build_followup_message(verdict: str, lang: str = "ta") -> Tuple[str, List[Di
                 {"id": "F_WHY", "title": "Why?"},
                 {"id": "F_TODO", "title": "What should I do?"},
                 {"id": "F_LEARN", "title": "Learn"},
-                {"id": "F_SHARE", "title": "Send to family"},
                 {"id": "INC_MENU", "title": "I already..."},
             ]
     else:
@@ -220,7 +218,6 @@ def build_followup_message(verdict: str, lang: str = "ta") -> Tuple[str, List[Di
             buttons = [
                 {"id": "F_TODO", "title": "என்ன செய்வது?"},
                 {"id": "F_LEARN", "title": "கற்றுக்கொள்"},
-                {"id": "F_SHARE", "title": "குடும்பத்துக்கு அனுப்பு"},
                 {"id": "INC_MENU", "title": "நான் ஏற்கனவே..."},
             ]
         else:
@@ -228,7 +225,6 @@ def build_followup_message(verdict: str, lang: str = "ta") -> Tuple[str, List[Di
                 {"id": "F_WHY", "title": "ஏன்?"},
                 {"id": "F_TODO", "title": "என்ன செய்வது?"},
                 {"id": "F_LEARN", "title": "கற்றுக்கொள்"},
-                {"id": "F_SHARE", "title": "குடும்பத்துக்கு அனுப்பு"},
                 {"id": "INC_MENU", "title": "நான் ஏற்கனவே..."},
             ]
     return text, buttons
@@ -240,7 +236,6 @@ def build_verdict_buttons() -> List[Dict[str, str]]:
         {"id": "F_WHY", "title": "ஏன்?"},
         {"id": "F_TODO", "title": "என்ன செய்வது?"},
         {"id": "F_LEARN", "title": "கற்றுக்கொள்"},
-        {"id": "F_SHARE", "title": "குடும்பத்துக்கு அனுப்பு"},
         {"id": "INC_MENU", "title": "நான் ஏற்கனவே..."},
     ]
 
